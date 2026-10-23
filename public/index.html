@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f5f5ef" />
   <meta name="description" content="Discover, check, and try Ollama-compatible model servers from one free, open directory." />
-  <!-- Set content to your deployed Node API origin when hosting the static page separately. -->
-  <meta name="ollama-api-base" content="" />
+
   <title>Ollama Commons — open models, open access</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
@@ -58,7 +57,7 @@
       </div>
       <div class="directory-meta"><div><span class="live-dot"></span><span id="results-count">Loading servers…</span></div><div class="sort-label">SORTED BY <b>FEATURED</b></div></div>
       <div class="server-grid" id="server-grid" aria-live="polite"><div class="loading-card">Loading the server directory <span class="loading-dots">•••</span></div></div>
-      <div class="directory-footnote"><span class="info-icon">i</span> This directory lists endpoints configured by its operator. Always check who runs a server before sharing sensitive prompts.</div>
+      <div class="directory-footnote"><span class="info-icon">i</span> Browser-only tests go directly from your browser to the endpoint. GitHub Pages requires each server to use HTTPS and allow CORS; HTTP listings will be blocked. Prompts go directly to the selected server.</div>
     </section>
 
     <section class="how-section" id="how">

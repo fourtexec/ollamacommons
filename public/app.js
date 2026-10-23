@@ -15,9 +15,6 @@ let activeServer = null;
 let activeModels = [];
 let history = [];
 let toastTimer;
-const configuredAPIBase = (document.querySelector('meta[name="ollama-api-base"]')?.content || '').trim();
-const isPublishedSite = location.hostname === 'ollama.fourtexec.site' || location.hostname.endsWith('.ollama.fourtexec.site') || location.hostname === 'fourtexec.github.io';
-const API_BASE = (configuredAPIBase || (isPublishedSite ? 'http://localhost:3000' : '')).replace(/\/+$/, '');
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function parseServersYaml(text) {
@@ -112,36 +109,68 @@ function render() {
     catch { showToast(`Copy this URL: ${button.dataset.url}`); }
   }));
 }
-async function getJSON(url, options) {
-  const target = url.startsWith('/api/') ? `${API_BASE}${url}` : url;
+function serverApiUrl(server, route) {
+  let base = String(server.url || '').trim().replace(/\/+$/, '');
+  if (/\/v1$/i.test(base) && route.startsWith('/api/')) base = base.slice(0, -3);
+  if (/\/v1$/i.test(base) && route.startsWith('/v1/')) return `${base}${route.slice(3)}`;
+  return `${base}${route}`;
+}
+function browserAccessMessage(server, error) {
+  let httpEndpoint = false;
+  try { httpEndpoint = location.protocol === 'https:' && new URL(server.url).protocol === 'http:'; } catch {}
+  if (httpEndpoint) return 'Browser blocked this HTTP endpoint as mixed content. Browser-only checks require an HTTPS Ollama URL and CORS permission for this site.';
+  if (error?.name === 'TypeError') return 'Browser could not read this endpoint. It must allow CORS requests from this site (and use HTTPS on an HTTPS page).';
+  return error?.message || 'Could not reach this Ollama endpoint.';
+}
+async function fetchServerJSON(server, route, options = {}) {
   let response;
-  try { response = await fetch(target, options); }
-  catch (error) {
-    if (API_BASE.includes('localhost') || API_BASE.includes('127.0.0.1')) {
-      throw new Error('Could not reach the local checker. Run `npm start` on this computer and allow the page to access your local network.');
-    }
-    throw error;
+  try {
+    response = await fetch(serverApiUrl(server, route), {
+      ...options,
+      headers: options.method ? { 'Content-Type': 'application/json', ...(options.headers || {}) } : (options.headers || {})
+    });
+  } catch (error) {
+    const friendly = new Error(browserAccessMessage(server, error));
+    friendly.status = error.status;
+    throw friendly;
   }
-  const data = await response.json().catch(() => ({}));
+  const raw = await response.text();
+  let data = {};
+  try { data = raw ? JSON.parse(raw) : {}; } catch { data = { error: raw.slice(0, 300) }; }
   if (!response.ok) {
-    if (data.error) throw new Error(data.error);
-    if ([404, 405].includes(response.status) && url.startsWith('/api/')) {
-      throw new Error(`HTTP ${response.status}: this host has no Ollama API backend. GitHub Pages is static-only; deploy server.js and set the ollama-api-base meta tag to that API URL.`);
-    }
-    throw new Error(`Request failed (${response.status})`);
+    const error = new Error(data.error || `Ollama returned HTTP ${response.status}`);
+    error.status = response.status;
+    throw error;
   }
   return data;
 }
+async function getModelListInBrowser(server) {
+  try {
+    const data = await fetchServerJSON(server, '/v1/models');
+    if (Array.isArray(data.data)) return { models: data.data.map(model => ({ name: model.id, owned_by: model.owned_by })), apiMode: 'openai' };
+  } catch (error) {
+    if (![404, 405].includes(error.status)) throw error;
+  }
+  try {
+    const data = await fetchServerJSON(server, '/api/tags');
+    return { models: (data.models || []).map(model => ({ ...model, name: model.name })), apiMode: 'ollama' };
+  } catch (error) {
+    throw new Error(browserAccessMessage(server, error));
+  }
+}
 async function checkServer(id, button) {
-  const original = button?.innerHTML;
   if (button) { button.disabled = true; button.textContent = 'Checking…'; }
   states[id] = { ...(states[id] || {}), status: 'checking' };
   render();
+  const server = servers.find(item => item.id === id);
   try {
-    const data = await getJSON(`/api/servers/${encodeURIComponent(id)}/check`);
-    states[id] = { status: 'online', latency: data.latency, models: data.models || [], version: data.version };
-    if (activeServer?.id === id) setActiveModels(data.models || [], data.version, data.latency);
-    showToast(`Server responded in ${data.latency} ms · ${data.models?.length || 0} models found`);
+    if (!server) throw new Error('Server entry was not found in the remote YAML.');
+    const started = Date.now();
+    const { models, apiMode } = await getModelListInBrowser(server);
+    const latency = Date.now() - started;
+    states[id] = { status: 'online', latency, models, apiMode };
+    if (activeServer?.id === id) setActiveModels(models, null, latency, apiMode);
+    showToast(`Server responded in ${latency} ms · ${models.length} models found`);
   } catch (error) {
     states[id] = { ...(states[id] || {}), status: 'offline', error: error.message };
     if (activeServer?.id === id) {
@@ -171,9 +200,10 @@ function openPlayground(id) {
   document.body.style.overflow = 'hidden';
   checkServer(id);
 }
-function setActiveModels(models, version, latency) {
+function setActiveModels(models, version, latency, apiMode) {
   activeModels = models;
-  const meta = `${version ? `Ollama ${version} · ` : ''}${latency} ms · ${models.length} model${models.length === 1 ? '' : 's'}`;
+  const modeLabel = apiMode === 'ollama' ? 'Ollama API' : 'OpenAI API';
+  const meta = `${modeLabel} · ${latency} ms · ${models.length} model${models.length === 1 ? '' : 's'}`;
   document.getElementById('play-server-meta').textContent = meta;
   if (!models.length) {
     modelSelect.innerHTML = '<option>No models installed on this server</option>';
@@ -216,11 +246,20 @@ async function sendChat(text) {
   promptInput.disabled = true;
   const waiting = addMessage('assistant', 'Thinking…');
   try {
-    const result = await getJSON(`/api/servers/${encodeURIComponent(activeServer.id)}/chat`, {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: modelSelect.value, messages: history })
-    });
-    const answer = result.message?.content || '(The model returned an empty response.)';
+    const apiMode = states[activeServer.id]?.apiMode || 'openai';
+    let result;
+    if (apiMode === 'ollama') {
+      result = await fetchServerJSON(activeServer, '/api/chat', { method: 'POST', body: JSON.stringify({ model: modelSelect.value, messages: history, stream: false }) });
+    } else {
+      try {
+        result = await fetchServerJSON(activeServer, '/v1/chat/completions', { method: 'POST', body: JSON.stringify({ model: modelSelect.value, messages: history, stream: false }) });
+      } catch (error) {
+        if (![404, 405].includes(error.status)) throw error;
+        result = await fetchServerJSON(activeServer, '/api/chat', { method: 'POST', body: JSON.stringify({ model: modelSelect.value, messages: history, stream: false }) });
+      }
+    }
+    const message = result.choices?.[0]?.message || result.message;
+    const answer = message?.content || '(The model returned an empty response.)';
     history.push({ role: 'assistant', content: answer });
     waiting.textContent = answer;
   } catch (error) {
