@@ -1,8 +1,8 @@
 # Ollama Commons
 
-A free, self-hostable directory for Ollama-compatible endpoints. Browse configured servers, test reachability and model availability, and try a model in an in-browser chat panel.
+A free, self-hostable directory for Ollama-compatible endpoints. Browse configured servers, copy their OpenAI-compatible base URLs, and try listed models in an in-browser chat panel.
 
-> This project is directory and testing software, not a hosted GPU service. The included public-looking `.example.com` URLs are placeholders, not real free servers. Only list endpoints you operate or have permission to use.
+> This project is directory software, not a hosted GPU service. The included `.example.com` URLs are placeholders, not real free servers. Only list endpoints you operate or have permission to include.
 
 ## Run it
 
@@ -21,7 +21,7 @@ npm run build
 
 This creates a self-contained `index.html` for GitHub Pages and `ollama-commons.html` as a separate copy. `CNAME` is set to `ollama.fourtexec.site`; configure that custom domain in the repository's Pages settings and DNS. Publish the generated root `index.html`, `CNAME`, and `.nojekyll` on the Pages branch (`ghpages` for this repository).
 
-The directory fetches its YAML directly from `https://ollama.fourtexec.site/servers.yaml`. Checks and chat are also sent directly from each visitor's browser to the selected server; no local helper or backend is used by the Pages site. For browser security, every listed endpoint must use HTTPS and allow CORS from `https://ollama.fourtexec.site` (and `https://fourtexec.github.io` if using the project URL). HTTP IP endpoints are blocked as mixed content on an HTTPS GitHub Pages site. The current HTTP-only entries therefore need HTTPS URLs and CORS enabled before browser-only checking can work. The local `servers.yaml` is an example/template; the live directory source is the remote YAML URL above.
+The directory fetches its YAML directly from `https://ollama.fourtexec.site/servers.yaml`. Chat prompts go directly from the visitor's browser to the selected server, so the endpoint must allow CORS from the site's origin. Use the HTTP site for HTTP endpoints; browsers block HTTP endpoints from HTTPS pages. The local `servers.yaml` is an example/template; the live directory source is the remote YAML URL above.
 
 ## Configure an endpoint
 
@@ -38,17 +38,15 @@ servers:
     example: false
 ```
 
-Required fields: `id`, `name`, and `url`. Optional fields: `description`, `region`, `free`, `tags`, `featured`, and `example`. IDs should be unique. URLs must be HTTP or HTTPS. The included minimal YAML reader supports flat server records, scalar values, booleans, quoted strings, and inline arrays.
+Required fields: `id`, `name`, and `url`. Optional fields: `description`, `region`, `free`, `tags`, `models`, `featured`, and `example`. IDs should be unique. URLs must be HTTP or HTTPS. The in-browser chat menu uses the `models` list from YAML; add model names there for each server. The YAML reader supports block-list and inline arrays.
 
-For GitHub Pages browser-only checks, target servers must expose Ollama's API over HTTPS, have the model(s) installed, and allow CORS from the Pages origin. Plain HTTP endpoints work in command-line clients but are blocked as mixed content from this HTTPS site.
+For browser chat, the target server must allow CORS from the site origin and expose either `/v1/chat/completions` or Ollama's `/api/chat` endpoint.
 
 ## Features
 
-- Search/filter configured servers and tags
-- Browser-direct check: tries `/v1/models`, falls back to `/api/tags`
+- Search/filter configured servers, tags, and listed models
 - Copyable `/v1/` base URL for each server
-- Browser-direct chat: tries `/v1/chat/completions`, falls back to `/api/chat`
-- No API backend or local software needed for browser-compatible HTTPS+CORS endpoints
+- In-browser chat using a model name listed in the remote YAML
 - No accounts, database, API key, or third-party npm dependency
 
 ## Hourly opt-in registry updater
@@ -81,4 +79,4 @@ servers:
 
 ## Security notes
 
-Only trust the maintainers of `https://ollama.fourtexec.site/servers.yaml`: its entries determine which endpoints the browser will contact when a visitor checks or chats. Prompts go directly from the browser to the selected server; that server's operator controls data handling. List only servers whose operators have agreed to be included.
+Only trust the maintainers of `https://ollama.fourtexec.site/servers.yaml`: its entries determine which endpoint receives a visitor's chat prompt. Prompts go directly from the browser to the selected server; that server's operator controls data handling. List only servers whose operators have agreed to be included.

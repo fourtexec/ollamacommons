@@ -21,4 +21,4 @@ fs.writeFileSync(outputPath, html);
 fs.writeFileSync(path.join(root, 'index.html'), html);
 console.log(`Built GitHub Pages entry point: index.html`);
 console.log(`Built standalone copy: ${path.basename(outputPath)}`);
-console.log('GitHub Pages checks/chat run directly in the visitor browser; target servers must support HTTPS and CORS.');
+console.log('Built static directory and browser chat playground.');

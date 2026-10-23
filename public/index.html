@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f5f5ef" />
-  <meta name="description" content="Discover, check, and try Ollama-compatible model servers from one free, open directory." />
+  <meta name="description" content="Browse Ollama-compatible model servers and try listed models from one free, open directory." />
 
   <title>Ollama Commons — open models, open access</title>
   <link rel="stylesheet" href="/styles.css" />
@@ -28,13 +28,13 @@
       <div class="hero-copy">
         <div class="eyebrow"><span class="eyebrow-dot"></span> FREE · OPEN · COMMUNITY-POWERED</div>
         <h1>Open models.<br><em>Open access.</em></h1>
-        <p class="hero-intro">A simple home for Ollama servers. Find an endpoint, check what’s running, and chat with a model right here.</p>
+        <p class="hero-intro">A simple home for Ollama servers. Find an endpoint, browse its listed models, and chat with a model right here.</p>
         <div class="hero-actions"><a class="button button-lime" href="#directory">Explore servers <span>↓</span></a><a class="text-link" href="#add">Add your server <span>↗</span></a></div>
         <div class="hero-note"><span class="mini-lock">⌑</span> No accounts. No paywalls. Just open models.</div>
       </div>
       <div class="hero-visual" aria-label="Ollama connection illustration">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="node node-top"><span class="node-icon">⌘</span><span><b>Ollama API</b><small>OpenAI? No. Open.</small></span><i class="online-pulse"></i></div>
+        <div class="node node-top"><span class="node-icon">⌘</span><span><b>Ollama API</b><small>OpenAI? No. Open.</small></span></div>
         <div class="central-orb"><div class="orb-core">O</div><span class="orb-ring ring-a"></span><span class="orb-ring ring-b"></span><span class="orb-spark">✳</span></div>
         <div class="node node-bottom"><span class="node-icon node-icon-lime">✳</span><span><b>Your next model</b><small>One click away</small></span><span class="arrow-small">↗</span></div>
         <span class="visual-label label-a">LOCAL FIRST</span><span class="visual-label label-b">COMMUNITY RUN</span>
@@ -45,26 +45,26 @@
 
     <section class="quick-strip" aria-label="Directory benefits">
       <div class="quick-item"><span class="quick-icon">⌁</span><span><b>Find a server</b><small>One directory, many endpoints</small></span></div>
-      <div class="quick-item"><span class="quick-icon">◉</span><span><b>Check it live</b><small>Latency, version &amp; models</small></span></div>
+      <div class="quick-item"><span class="quick-icon">◉</span><span><b>Browse models</b><small>See names supplied in the directory</small></span></div>
       <div class="quick-item"><span class="quick-icon">✳</span><span><b>Try it in-browser</b><small>Chat without switching tools</small></span></div>
       <div class="quick-item quick-free"><span>FREE FOREVER</span><small>Community software, not a hosted GPU service</small></div>
     </section>
 
     <section class="directory-section" id="directory">
       <div class="section-heading">
-        <div><div class="section-kicker">THE DIRECTORY</div><h2>Find your model endpoint<span class="heading-period">.</span></h2><p>Browse configured servers, then run a live check before you connect.</p></div>
+        <div><div class="section-kicker">THE DIRECTORY</div><h2>Find your model endpoint<span class="heading-period">.</span></h2><p>Browse configured servers and the model names listed for each one.</p></div>
         <div class="directory-controls"><label class="searchbox"><span>⌕</span><input id="search-input" type="search" placeholder="Search servers or models" autocomplete="off"><kbd>⌘ K</kbd></label><button id="filter-toggle" class="filter-button" aria-label="Toggle free servers filter">☷ <span>Free only</span><span class="filter-check">✓</span></button></div>
       </div>
-      <div class="directory-meta"><div><span class="live-dot"></span><span id="results-count">Loading servers…</span></div><div class="sort-label">SORTED BY <b>FEATURED</b></div></div>
+      <div class="directory-meta"><div><span class="directory-dot"></span><span id="results-count">Loading servers…</span></div><div class="sort-label">SORTED BY <b>FEATURED</b></div></div>
       <div class="server-grid" id="server-grid" aria-live="polite"><div class="loading-card">Loading the server directory <span class="loading-dots">•••</span></div></div>
-      <div class="directory-footnote"><span class="info-icon">i</span> Browser-only tests go directly from your browser. For these HTTP server URLs, use <a href="http://ollama.fourtexec.site">the HTTP version</a>. Each Ollama server must still allow CORS from this site; Python and command-line harnesses do not enforce browser CORS. Prompts go directly to the selected server.</div>
+      <div class="directory-footnote"><span class="info-icon">i</span> Chat prompts go directly from your browser to the selected server. For HTTP server URLs, use <a href="http://ollama.fourtexec.site">the HTTP version</a>. Servers must allow browser CORS.</div>
     </section>
 
     <section class="how-section" id="how">
       <div class="how-heading"><div class="section-kicker">FROM ZERO TO PROMPT</div><h2>Three steps. No ceremony.</h2><p>Bring your own Ollama server, or point this directory at a community endpoint.</p></div>
       <div class="steps-grid">
         <article class="step-card"><div class="step-number">01 <span>— CONFIGURE</span></div><div class="step-art art-file"><span class="file-fold"></span><i>YAML</i><b>servers.yaml</b><span class="file-lines"><i></i><i></i><i></i></span></div><h3>Add an endpoint</h3><p>Put your server URL in a tiny <code>servers.yaml</code> file. No database or account required.</p></article>
-        <article class="step-card"><div class="step-number">02 <span>— VERIFY</span></div><div class="step-art art-ping"><span class="ping-circle">✓</span><span class="ping-line"></span><span class="ping-pill">200 OK</span></div><h3>Check it live</h3><p>Check the OpenAI-compatible endpoint for available models and response time.</p></article>
+        <article class="step-card"><div class="step-number">02 <span>— CHOOSE</span></div><div class="step-art art-ping"><span class="ping-circle">✳</span><span class="ping-line"></span><span class="ping-pill">7 MODELS</span></div><h3>Pick a model</h3><p>Use the model names published in the directory, then open the chat playground.</p></article>
         <article class="step-card"><div class="step-number">03 <span>— EXPLORE</span></div><div class="step-art art-chat"><div class="chat-bubble bubble-user">Explain embeddings simply</div><div class="chat-bubble bubble-ai">A map of meaning… <i>✳</i></div></div><h3>Start a conversation</h3><p>Choose an installed model and send a prompt from the built-in chat playground.</p></article>
       </div>
     </section>
@@ -89,8 +89,8 @@
   <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
     <section class="playground" role="dialog" aria-modal="true" aria-labelledby="playground-title">
       <header class="playground-head"><div><div class="section-kicker">OLLAMA PLAYGROUND</div><h2 id="playground-title">Try a model</h2></div><button class="close-modal" id="close-modal" aria-label="Close">×</button></header>
-      <div class="playground-server"><div class="play-icon">✳</div><div><strong id="play-server-name">Server</strong><span id="play-server-meta">Check server to load models</span></div><button id="play-check" class="small-outline">Check now</button></div>
-      <label class="model-label" for="model-select">MODEL</label><select id="model-select" disabled><option>Check the server to load available models</option></select>
+      <div class="playground-server"><div class="play-icon">✳</div><div><strong id="play-server-name">Server</strong><span id="play-server-meta">Models from servers.yaml</span></div></div>
+      <label class="model-label" for="model-select">MODEL</label><select id="model-select" disabled><option>Choose a listed model</option></select>
       <div class="chat-area" id="chat-area"><div class="welcome-chat"><div class="welcome-spark">✳</div><b>A blank canvas.</b><span>Pick an installed model and ask it anything.</span></div></div>
       <form id="chat-form" class="chat-form"><textarea id="prompt-input" placeholder="Message this model…" rows="1" disabled></textarea><button type="submit" id="send-button" disabled aria-label="Send message">↑</button></form>
       <div class="playground-note"><span>↗</span> Your prompt is sent directly to this server. Don’t share sensitive data.</div>
