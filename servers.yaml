@@ -1,31 +1,104 @@
-# Ollama servers shown in the directory. These are configuration examples only;
-# replace the .example URLs with servers you operate or have permission to use.
-# Each endpoint should expose Ollama's HTTP API (usually port 11434).
 servers:
-  - id: local-ollama
-    name: My local Ollama
-    url: http://localhost:11434
-    description: Your own Ollama server on this machine. Install Ollama and pull a model to get started.
-    region: Local
-    free: true
-    tags: [local, private, bring-your-own-models]
-    featured: true
-    example: true
-  - id: community-us
-    name: Community GPU · US East
-    url: https://ollama-us.example.com
-    description: Example listing for a community-hosted endpoint. Replace this placeholder with a real server.
-    region: US East
-    free: true
-    tags: [community, gpu, llama]
-    featured: false
-    example: true
-  - id: community-eu
-    name: Community GPU · Europe
-    url: https://ollama-eu.example.com
-    description: Example listing for a community-hosted endpoint. Replace this placeholder with a real server.
-    region: Europe
-    free: true
-    tags: [community, gpu, multilingual]
-    featured: false
-    example: true
+- id: local-ollama
+  name: My local Ollama
+  url: http://localhost:11434
+  description: Your own Ollama server on this machine. Install Ollama and pull a model
+    to get started.
+  region: Local
+  free: true
+  tags:
+  - local
+  - private
+  - bring-your-own-models
+  featured: true
+  example: true
+- id: community-us
+  name: Community GPU · US East
+  url: https://ollama-us.example.com
+  description: Example listing for a community-hosted endpoint. Replace this placeholder
+    with a real server.
+  region: US East
+  free: true
+  tags:
+  - community
+  - gpu
+  - llama
+  featured: false
+  example: true
+- id: community-eu
+  name: Community GPU · Europe
+  url: https://ollama-eu.example.com
+  description: Example listing for a community-hosted endpoint. Replace this placeholder
+    with a real server.
+  region: Europe
+  free: true
+  tags:
+  - community
+  - gpu
+  - multilingual
+  featured: false
+  example: true
+- id: ollama-com
+  name: Discovered · ollama.com
+  url: https://ollama.com
+  description: Auto-discovered Ollama endpoint (23 models). Detected 2026-10-23 18:37:51.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - nemotron-3-super
+  - glm-5.2
+  - mistral-large-3:675b
+  - kimi-k2.6
+  - deepseek-v4-pro:0813
+  - deepseek-v4.1-flash
+  - gemma4:31b
+  - glm-5.3-flash
+  - kimi-k3
+  - deepseek-v4.1-flash:1017
+  - gpt-oss:120b
+  - minimax-m3
+  - glm-5.3
+  - nemotron-3-nano:30b
+  - nemotron-3-ultra
+  - clef:27b
+  - minimax-m2.7
+  - minimax-m3.1-flash
+  - beam
+  - muse-spark-open
+- id: ollama-ai
+  name: Discovered · ollama.ai
+  url: https://ollama.ai
+  description: Auto-discovered Ollama endpoint (23 models). Detected 2026-10-23 18:37:52.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - nemotron-3-nano:30b
+  - minimax-m3
+  - nemotron-3-ultra
+  - kimi-k3
+  - deepseek-v4-pro:0813
+  - deepseek-v4.1-flash
+  - gpt-oss:20b
+  - mistral-large-3:675b
+  - mistral-large-4
+  - glm-5.2
+  - minimax-m3.1-flash
+  - gemma4:31b
+  - kimi-k2.6
+  - gpt-oss:120b
+  - nemotron-3-super
+  - clef:27b
+  - deepseek-v4.1-flash:1017
+  - glm-5.3
+  - minimax-m2.7
+  - beam

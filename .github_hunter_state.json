@@ -1,0 +1,18 @@
+{
+  "last_commit": 0,
+  "seen_urls": [
+    "http://0.0.0.0:11434",
+    "http://127.0.0.1:11434",
+    "http://192.168.1.100:11434",
+    "http://192.168.31.213:11434",
+    "http://OLLAMA",
+    "http://host.docker.internal:11434",
+    "http://localhost:11434",
+    "http://ollama:11434",
+    "http://remote-host:11434",
+    "http://your-host:11434",
+    "http://your-server:11434",
+    "https://ollama.ai",
+    "https://ollama.com"
+  ]
+}
