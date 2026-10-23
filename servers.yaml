@@ -1,0 +1,31 @@
+# Ollama servers shown in the directory. These are configuration examples only;
+# replace the .example URLs with servers you operate or have permission to use.
+# Each endpoint should expose Ollama's HTTP API (usually port 11434).
+servers:
+  - id: local-ollama
+    name: My local Ollama
+    url: http://localhost:11434
+    description: Your own Ollama server on this machine. Install Ollama and pull a model to get started.
+    region: Local
+    free: true
+    tags: [local, private, bring-your-own-models]
+    featured: true
+    example: true
+  - id: community-us
+    name: Community GPU · US East
+    url: https://ollama-us.example.com
+    description: Example listing for a community-hosted endpoint. Replace this placeholder with a real server.
+    region: US East
+    free: true
+    tags: [community, gpu, llama]
+    featured: false
+    example: true
+  - id: community-eu
+    name: Community GPU · Europe
+    url: https://ollama-eu.example.com
+    description: Example listing for a community-hosted endpoint. Replace this placeholder with a real server.
+    region: Europe
+    free: true
+    tags: [community, gpu, multilingual]
+    featured: false
+    example: true
