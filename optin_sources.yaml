@@ -1,0 +1,4 @@
+# Add HTTPS YAML feeds whose operators explicitly allow inclusion.
+# Each feed uses the same top-level format as servers.yaml and each accepted
+# server entry must contain `opt_in: true`.
+sources: []

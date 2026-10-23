@@ -1,0 +1,13 @@
+{
+  "name": "ollama-free-server-directory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A free, self-hostable directory and tester for Ollama-compatible servers",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
