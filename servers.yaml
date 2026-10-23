@@ -1,47 +1,8 @@
 servers:
-- id: local-ollama
-  name: My local Ollama
-  url: http://localhost:11434
-  description: Your own Ollama server on this machine. Install Ollama and pull a model
-    to get started.
-  region: Local
-  free: true
-  tags:
-  - local
-  - private
-  - bring-your-own-models
-  featured: true
-  example: true
-- id: community-us
-  name: Community GPU · US East
-  url: https://ollama-us.example.com
-  description: Example listing for a community-hosted endpoint. Replace this placeholder
-    with a real server.
-  region: US East
-  free: true
-  tags:
-  - community
-  - gpu
-  - llama
-  featured: false
-  example: true
-- id: community-eu
-  name: Community GPU · Europe
-  url: https://ollama-eu.example.com
-  description: Example listing for a community-hosted endpoint. Replace this placeholder
-    with a real server.
-  region: Europe
-  free: true
-  tags:
-  - community
-  - gpu
-  - multilingual
-  featured: false
-  example: true
-- id: ollama-com
-  name: Discovered · ollama.com
-  url: https://ollama.com
-  description: Auto-discovered Ollama endpoint (23 models). Detected 2026-10-23 18:37:51.
+- id: 2-28-52-223_11434
+  name: Discovered · 2.28.52.223_11434
+  url: http://2.28.52.223:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-23 18:42:22.
   region: Auto
   free: true
   tags:
@@ -50,30 +11,13 @@ servers:
   featured: false
   example: false
   models:
-  - nemotron-3-super
-  - glm-5.2
-  - mistral-large-3:675b
-  - kimi-k2.6
-  - deepseek-v4-pro:0813
-  - deepseek-v4.1-flash
-  - gemma4:31b
-  - glm-5.3-flash
-  - kimi-k3
-  - deepseek-v4.1-flash:1017
-  - gpt-oss:120b
-  - minimax-m3
-  - glm-5.3
-  - nemotron-3-nano:30b
-  - nemotron-3-ultra
-  - clef:27b
-  - minimax-m2.7
-  - minimax-m3.1-flash
-  - beam
-  - muse-spark-open
-- id: ollama-ai
-  name: Discovered · ollama.ai
-  url: https://ollama.ai
-  description: Auto-discovered Ollama endpoint (23 models). Detected 2026-10-23 18:37:52.
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - llama3.2:1b
+- id: 2-29-14-93_11434
+  name: Discovered · 2.29.14.93_11434
+  url: http://2.29.14.93:11434
+  description: Auto-discovered Ollama endpoint (8 models). Detected 2026-10-23 18:42:22.
   region: Auto
   free: true
   tags:
@@ -82,23 +26,434 @@ servers:
   featured: false
   example: false
   models:
-  - nemotron-3-nano:30b
-  - minimax-m3
-  - nemotron-3-ultra
-  - kimi-k3
-  - deepseek-v4-pro:0813
-  - deepseek-v4.1-flash
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - deepseek-v4.1-flash:cloud
+  - smollm2:135m
+  - llama3:latest
+  - deepseek-v4-flash:cloud
+  - llava:7b
+  - qwen2.5:7b-instruct
+- id: 2-28-226-33_11434
+  name: Discovered · 2.28.226.33_11434
+  url: http://2.28.226.33:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-23 18:42:28.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - llama3.2:1b
+  - qwen2.5:0.5b
+  - llama3.2:latest
+- id: 1-241-236-112_11434
+  name: Discovered · 1.241.236.112_11434
+  url: http://1.241.236.112:11434
+  description: Auto-discovered Ollama endpoint (15 models). Detected 2026-10-23 18:42:28.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - beam:cloud
+  - muse-spark-open:cloud
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - probe_zz_oyxjx:latest
+  - hf.co/ornith-ai/Ornith-1.5-9B-GGUF:Q4_K_M
+  - smollm2:135m
+  - deepseek-v4.1-flash:cloud
+  - cve-0315-1789755198:latest
+  - cve-0317-1789755192:latest
+  - cve-regexbypass-1789755156:latest
+  - llama3:latest
+  - bge-m3:latest
+  - sysverify-99681:latest
+  - deepseek-v4-flash:cloud
+- id: 1-230-71-10_11434
+  name: Discovered · 1.230.71.10_11434
+  url: http://1.230.71.10:11434
+  description: Auto-discovered Ollama endpoint (1 models). Detected 2026-10-23 18:42:28.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.2:1b
+- id: 1-235-104-75_11434
+  name: Discovered · 1.235.104.75_11434
+  url: http://1.235.104.75:11434
+  description: Auto-discovered Ollama endpoint (9 models). Detected 2026-10-23 18:42:28.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - gemma4:e4b
+  - cs-abl-batch-1.235.104.75-11434:latest
+  - hf.co/rectangleworm/PornMaster_Klein-9b:Q4_K_M
+  - deepseek-v4.1-flash:cloud
+  - hf.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF:Q4_K_M
+  - deepseek-v4-flash:cloud
+  - hf.co/ornith-ai/Ornith-1.5-9B-GGUF:Q4_K_M
+  - hf.co/ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
+- id: 1-64-179-183_11434
+  name: Discovered · 1.64.179.183_11434
+  url: http://1.64.179.183:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-23 18:42:28.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - muse-spark-open:cloud
+  - beam:cloud
+  - minimax-m3.1-flash:cloud
+  - llama3.1:latest
+- id: 2-26-52-86_11434
+  name: Discovered · 2.26.52.86_11434
+  url: http://2.26.52.86:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-23 18:42:29.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - beam:cloud
+  - muse-spark-open:cloud
+  - minimax-m3.1-flash:cloud
+- id: 2-26-80-59_11434
+  name: Discovered · 2.26.80.59_11434
+  url: http://2.26.80.59:11434
+  description: Auto-discovered Ollama endpoint (7 models). Detected 2026-10-23 18:42:34.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - beam:cloud
+  - muse-spark-open:cloud
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - 103.249.201.108:9882/trigger/benign:latest
+  - 24.144.109.68:9882/trigger/benign:latest
+  - llama3.2:1b
+- id: 2-27-166-39_11434
+  name: Discovered · 2.27.166.39_11434
+  url: http://2.27.166.39:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-23 18:42:34.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - gpt-oss-20b-32k:latest
   - gpt-oss:20b
-  - mistral-large-3:675b
-  - mistral-large-4
-  - glm-5.2
-  - minimax-m3.1-flash
-  - gemma4:31b
-  - kimi-k2.6
-  - gpt-oss:120b
-  - nemotron-3-super
-  - clef:27b
-  - deepseek-v4.1-flash:1017
-  - glm-5.3
-  - minimax-m2.7
-  - beam
+  - qwen3.5:2b
+- id: 2-7-158-180_11434
+  name: Discovered · 2.7.158.180_11434
+  url: http://2.7.158.180:11434
+  description: Auto-discovered Ollama endpoint (2 models). Detected 2026-10-23 18:42:40.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - llama3.2:1b
+- id: 1-234-222-114_11434
+  name: Discovered · 1.234.222.114_11434
+  url: http://1.234.222.114:11434
+  description: Auto-discovered Ollama endpoint (13 models). Detected 2026-10-23 18:42:41.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - muse-spark-open:cloud
+  - beam:cloud
+  - glm-5.3:cloud
+  - mistral-large-4:cloud
+  - minimax-m3:cloud
+  - nemotron-3-ultra:cloud
+  - deepseek-v4.1-flash:cloud
+  - huihui_ai/Qwen3.8-abliterated:latest
+  - deepseek-v4-pro:cloud
+  - glm-5.3-flash:cloud
+  - kimi-k3:cloud
+  - minimax-m3.1-flash:cloud
+  - llama3.2:1b
+- id: 1-224-54-35_11434
+  name: Discovered · 1.224.54.35_11434
+  url: http://1.224.54.35:11434
+  description: Auto-discovered Ollama endpoint (49 models). Detected 2026-10-23 18:42:42.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - gemma3:4b
+  - gpt-oss:20b
+  - gemma4:e4b
+  - gemma4:e2b
+  - dolphin-llama3:8b
+  - qwen3.5:2b
+  - qwen3-vl:2b
+  - hf.co/ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
+  - hf.co/ornith-ai/Ornith-1.5-9B-GGUF:Q4_K_M
+  - cs-proof-batch-1.224.54.35-11434:latest
+  - huihui_ai/qwen2.5-abliterate:latest
+  - cs-proof-20260921:latest
+  - deepseek-v4.1-flash:cloud
+  - huihui_ai/qwen2.5-abliterate:7b-instruct
+  - huihui_ai/qwen2.5-abliterate:14b
+  - richardyoung/qwythos-9b-abliterated:Q4_K_M
+  - phi4:14b
+  - cognitivecomputations/dolphin-llama3.1:latest
+- id: 1-241-158-71_11434
+  name: Discovered · 1.241.158.71_11434
+  url: http://1.241.158.71:11434
+  description: Auto-discovered Ollama endpoint (1 models). Detected 2026-10-23 18:42:47.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - gpt-oss:20b
+- id: 1-227-21-165_11434
+  name: Discovered · 1.227.21.165_11434
+  url: http://1.227.21.165:11434
+  description: Auto-discovered Ollama endpoint (6 models). Detected 2026-10-23 18:42:48.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - beam:cloud
+  - muse-spark-open:cloud
+  - 103.249.201.108:9882/trigger/benign:latest
+  - 24.144.109.68:9882/trigger/benign:latest
+  - glm-5.3:cloud
+  - llama3.2:1b
+- id: 1-6-99-133_11434
+  name: Discovered · 1.6.99.133_11434
+  url: http://1.6.99.133:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-23 18:42:48.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - muse-spark-open:cloud
+  - beam:cloud
+  - minimax-m3.1-flash:cloud
+- id: 1-236-245-110_11434
+  name: Discovered · 1.236.245.110_11434
+  url: http://1.236.245.110:11434
+  description: Auto-discovered Ollama endpoint (10 models). Detected 2026-10-23 18:42:51.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - ops-verify:latest
+  - llama3.2:latest
+  - tinyllama:latest
+  - qwen3.6:27b
+  - qwen3.6:35b
+  - llama3.2:3b
+  - qwen2.5:7b
+  - llava:latest
+  - ollama-ko-1206_1:latest
+  - ollama-ko-1206:latest
+- id: 1-40-100-77_11434
+  name: Discovered · 1.40.100.77_11434
+  url: http://1.40.100.77:11434
+  description: Auto-discovered Ollama endpoint (10 models). Detected 2026-10-23 18:42:54.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - minimax-m3.1-flash:cloud
+  - moondream:latest
+  - qwen3:14b
+  - qwen3:8b
+  - deepseek-v4.1-flash:cloud
+  - hf.co/ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
+  - hf.co/ornith-ai/Ornith-1.5-9B-GGUF:Q4_K_M
+  - huihui_ai/Qwen3.8-abliterated:latest
+  - nomic-embed-text:latest
+  - gemma4:e4b
+- id: 1-179-197-125_11434
+  name: Discovered · 1.179.197.125_11434
+  url: http://1.179.197.125:11434
+  description: Auto-discovered Ollama endpoint (6 models). Detected 2026-10-23 18:42:58.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - muse-spark-open:cloud
+  - beam:cloud
+  - hf.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF:Q4_K_M
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - llama3.2:1b
+- id: 2-28-48-64_11434
+  name: Discovered · 2.28.48.64_11434
+  url: http://2.28.48.64:11434
+  description: Auto-discovered Ollama endpoint (7 models). Detected 2026-10-23 18:42:59.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - deepseek-v4.1-flash:cloud
+  - deepseek-v4-flash:cloud
+  - huihui_ai/Qwen3.8-abliterated:latest
+  - qwen2.5:3b
+  - qwen2.5:7b
+- id: 2-28-46-6_11434
+  name: Discovered · 2.28.46.6_11434
+  url: http://2.28.46.6:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-23 18:42:59.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - llama3.2:1b
+- id: 2-27-14-27_11434
+  name: Discovered · 2.27.14.27_11434
+  url: http://2.27.14.27:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-23 18:43:05.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+  - 24.144.109.68:9882/trigger/benign:latest
+  - llama3.2:1b
+- id: 1-248-79-46_11434
+  name: Discovered · 1.248.79.46_11434
+  url: http://1.248.79.46:11434
+  description: Auto-discovered Ollama endpoint (5 models). Detected 2026-10-23 18:43:06.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - qwen3:8b
+  - qwen2.5vl:7b
+  - qwen3-vl:8b-instruct
+  - llama3.2:1b
+- id: 1-22-218-183_11434
+  name: Discovered · 1.22.218.183_11434
+  url: http://1.22.218.183:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-23 18:43:08.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - muse-spark-open:cloud
+  - beam:cloud
+  - glm-5.3:cloud
+  - minimax-m3.1-flash:cloud
+- id: 1-34-154-164_11434
+  name: Discovered · 1.34.154.164_11434
+  url: http://1.34.154.164:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-23 18:43:09.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - glm-5.3:cloud
+  - beam:cloud
+  - muse-spark-open:cloud
+  - minimax-m3.1-flash:cloud
