@@ -9,10 +9,12 @@
   <title>Ollama Commons — open models, open access</title>
   <style>
 500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-:root{--paper:#f5f5ef;--ink:#1b2623;--muted:#737d78;--line:#e0e3dc;--lime:#d4fa56;--deep:#17221f;--green:#59826d;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.topbar{height:78px;padding:0 max(calc((100vw - 1240px)/2),6.25%);display:flex;align-items:center;justify-content:space-between;background:var(--paper);border-bottom:1px solid rgba(28,42,36,.07);position:relative;z-index:5}.brand{display:flex;align-items:center;gap:10px;font:800 17px 'Manrope',sans-serif;letter-spacing:-.8px}.brand-light{font-weight:500;color:#829088}.brand-mark{width:32px;height:32px;border-radius:9px;background:var(--deep);display:grid;place-items:center}.brand-mark svg{width:25px;fill:none;stroke:var(--lime);stroke-width:1.4;stroke-linejoin:round}.main-nav{display:flex;gap:34px;font-size:13px;color:#58635d}.main-nav a:hover,.text-link:hover{color:#385b47}.nav-cta{font-size:12px;font-weight:700;border:1px solid #cdd4cb;padding:11px 15px;border-radius:5px}.nav-cta span{margin-left:9px}.mobile-menu{display:none;background:none;border:0}.hero{min-height:538px;background:var(--deep);color:#f8fbf3;position:relative;overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;padding:73px max(calc((100vw - 1148px)/2),8.3%) 74px}.hero-grid{position:absolute;inset:0 0 0 48%;opacity:.11;background-image:linear-gradient(rgba(195,223,201,.24) 1px,transparent 1px),linear-gradient(90deg,rgba(195,223,201,.24) 1px,transparent 1px);background-size:50px 50px;mask-image:linear-gradient(90deg,transparent,#000 38%)}.hero-copy{position:relative;z-index:1;max-width:530px}.eyebrow,.section-kicker{font:500 10px 'DM Mono',monospace;letter-spacing:1.2px;color:#829a8b}.eyebrow{color:#b1c3b4;display:flex;align-items:center;gap:9px}.eyebrow-dot,.live-dot,.file-status{height:7px;width:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 3px rgba(212,250,86,.13)}h1,h2,h3,p{margin-top:0}h1{font:700 clamp(45px,5.5vw,69px)/1.04 'Manrope',sans-serif;letter-spacing:-3.8px;margin:25px 0 17px}h1 em,.add-copy h2 em{font-style:normal;color:var(--lime)}.hero-intro{color:#bdc7be;line-height:1.7;font-size:15px;max-width:428px;margin-bottom:25px}.hero-actions{display:flex;align-items:center;gap:23px}.button{display:inline-flex;align-items:center;justify-content:center;gap:22px;padding:14px 18px;border-radius:4px;font-size:12px;font-weight:700;transition:transform .18s,background .18s}.button:hover{transform:translateY(-2px)}.button-lime{background:var(--lime);color:#17221f}.button-lime:hover{background:#e0ff7c}.text-link{font-size:12px;font-weight:600;color:#d4ddd4}.text-link span{margin-left:7px}.hero-note{font-size:10px;color:#93a398;margin-top:27px}.mini-lock{font-size:16px;margin-right:7px;color:var(--lime);vertical-align:-1px}.hero-visual{position:relative;z-index:1;min-height:360px;display:flex;justify-content:center;align-items:center}.orbit{position:absolute;border:1px solid rgba(213,250,86,.14);border-radius:50%;transform:rotate(-28deg)}.orbit-one{width:380px;height:210px}.orbit-two{width:330px;height:160px;transform:rotate(36deg);border-color:rgba(140,185,151,.2)}.central-orb{width:122px;height:122px;border-radius:50%;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 36% 27%,#41594c,#26382e 70%);box-shadow:0 0 70px rgba(177,238,85,.17),inset 0 0 22px rgba(214,250,86,.1)}.orb-core{height:57px;width:57px;border:1px solid rgba(212,250,86,.74);border-radius:50%;color:var(--lime);font:800 32px 'Manrope';display:grid;place-items:center;text-shadow:0 0 20px #d4fa56}.orb-ring{position:absolute;inset:-12px;border:1px solid rgba(212,250,86,.27);border-radius:50%}.ring-b{inset:-26px;border-color:rgba(212,250,86,.12)}.orb-spark{position:absolute;right:-17px;top:4px;color:var(--lime);font-size:21px}.node{position:absolute;border:1px solid rgba(222,238,221,.15);background:rgba(37,53,45,.95);border-radius:8px;padding:12px;display:flex;align-items:center;gap:10px;box-shadow:0 14px 30px #101a16}.node-top{top:28px;left:4%}.node-bottom{bottom:47px;right:0}.node-icon{height:31px;width:31px;background:#344940;border-radius:6px;display:grid;place-items:center;color:#d5e6d6;font-size:16px}.node-icon-lime{color:var(--lime)}.node b,.node small{display:block}.node b{font-size:10px;font-weight:600}.node small{font-size:9px;color:#98aa9e;margin-top:4px}.arrow-small{color:var(--lime);font-size:13px;margin-left:10px}.visual-label{position:absolute;font:9px 'DM Mono';letter-spacing:1px;color:#809188}.label-a{right:4%;top:29%}.label-b{left:7%;bottom:19%}.hero-stats{display:flex;gap:19px;position:absolute;bottom:-48px;right:8%;align-items:center}.hero-stats strong,.hero-stats span{display:block}.hero-stats strong{font:600 17px 'Manrope';color:#eff7e8}.hero-stats span{font-size:9px;color:#95a49a;margin-top:2px}.stat-separator{height:29px;border-left:1px solid #415148}.hero-bottomline{position:absolute;bottom:0;left:8.3%;right:8.3%;height:37px;border-top:1px solid rgba(219,236,219,.12);display:flex;align-items:center;justify-content:space-between;font:8px 'DM Mono';letter-spacing:1px;color:#84958a}.hero-bottomline b{font-size:12px;color:var(--lime);margin-left:6px}.quick-strip{max-width:1148px;margin:0 auto;padding:29px 0;display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}.quick-item{display:flex;align-items:center;gap:12px;padding:0 22px;border-right:1px solid var(--line)}.quick-item:first-child{padding-left:0}.quick-item:nth-child(3){border:0}.quick-icon{width:34px;height:34px;border-radius:50%;background:#e8ece4;display:grid;place-items:center;color:#3c654e;font-size:18px}.quick-item b,.quick-item small{display:block}.quick-item b{font-size:11px}.quick-item small{font-size:9px;color:#78817b;margin-top:4px}.quick-free{display:block;border:0;padding-left:23px}.quick-free span{font:10px 'DM Mono';letter-spacing:.7px;color:#446c51}.quick-free small{margin-top:5px}.directory-section{max-width:1148px;margin:0 auto;padding:86px 0 80px}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:25px}.section-kicker{color:#66856e}.section-heading h2,.how-heading h2,.add-copy h2{font:700 34px/1.2 'Manrope',sans-serif;letter-spacing:-1.7px;margin:13px 0 8px}.heading-period{color:#679079}.section-heading p,.how-heading>p{font-size:12px;color:#78817b;margin:0}.directory-controls{display:flex;gap:8px;align-items:center}.searchbox{width:270px;height:40px;display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #dce1d9;border-radius:4px;padding:0 10px;color:#87928a}.searchbox>span{font-size:20px}.searchbox input{border:0;outline:0;background:transparent;width:100%;font:11px 'DM Sans';color:var(--ink)}.searchbox kbd{font:9px 'DM Mono';color:#8b958e;border:1px solid #e0e4de;border-radius:3px;padding:3px 5px;white-space:nowrap}.filter-button{height:40px;background:#fff;border:1px solid #dce1d9;border-radius:4px;padding:0 12px;font:11px 'DM Sans';color:#55615a;cursor:pointer}.filter-check{display:inline-grid;place-items:center;margin-left:9px;width:15px;height:15px;border-radius:3px;background:#d8f87e;color:#324b34;font-size:10px}.filter-button.is-off .filter-check{background:#edf0eb;color:#9aa29c}.directory-meta{display:flex;justify-content:space-between;margin-top:37px;padding:12px 2px;border-bottom:1px solid #dce0da;color:#68746b;font-size:10px}.directory-meta>div:first-child{display:flex;align-items:center;gap:8px}.directory-dot{background:#73ad73;box-shadow:none;width:6px;height:6px}.sort-label{font:9px 'DM Mono';color:#8d9690;letter-spacing:.7px}.sort-label b{font-weight:400;color:#53625a;margin-left:5px}.server-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;padding-top:17px}.server-card{background:#fff;border:1px solid #e3e6df;border-radius:6px;padding:18px;min-height:220px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s,box-shadow .2s}.server-card:hover{border-color:#bdcbb9;transform:translateY(-2px);box-shadow:0 10px 28px rgba(43,59,47,.06)}.card-top{display:flex;justify-content:space-between;align-items:center}.region-label{display:flex;align-items:center;gap:6px;color:#77837b;font:9px 'DM Mono';letter-spacing:.4px}.region-icon{font-size:12px;color:#698773}.badges{display:flex;gap:5px}.badge{font:8px 'DM Mono';letter-spacing:.3px;padding:5px 7px;border-radius:3px;background:#eff3eb;color:#68806c}.badge.free{background:#e9f5e4;color:#4c7a54}.badge.example{background:#fff3dd;color:#9c7335}.card-title{display:flex;align-items:center;gap:8px;margin-top:17px}.card-title h3{font:600 15px 'Manrope';letter-spacing:-.4px;margin:0}.card-desc{font-size:10px;color:#78817b;line-height:1.6;margin:8px 0 12px;min-height:31px}.endpoint-line{display:flex;align-items:center;gap:6px;margin:-3px 0 9px;color:#849087;min-width:0}.endpoint-line span{color:#76957b;font-size:10px}.endpoint-line code{font:9px 'DM Mono';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}.endpoint-copy{border:0;background:transparent;color:#66856e;font:8px 'DM Mono';cursor:pointer;padding:3px 0 3px 6px}.endpoint-copy:hover{color:#263e2e;text-decoration:underline}.tag-list{display:flex;gap:5px;flex-wrap:wrap}.tag{font:8px 'DM Mono';color:#67786d;background:#f3f5f0;border-radius:3px;padding:5px 6px}.card-bottom{margin-top:auto;padding-top:16px;border-top:1px solid #eff1ed;display:flex;align-items:center;justify-content:space-between}.model-summary{font:9px 'DM Mono';color:#7a867d}.model-summary strong{color:#3a5842;font-weight:500}.card-actions{display:flex;gap:6px}.card-button{border:1px solid #e0e5df;background:#fff;border-radius:3px;padding:7px 9px;font:9px 'DM Sans';font-weight:600;color:#48574c;cursor:pointer}.card-button:hover{background:#f5f8f1;border-color:#c3d0c1}.card-button.primary{background:var(--deep);color:#eff5ea;border-color:var(--deep)}.card-button.primary:hover{background:#2d4236}.card-button:disabled{opacity:.55;cursor:wait}.loading-card,.empty-state{grid-column:1/-1;padding:50px;text-align:center;color:#7d877f;font-size:12px;background:#fff;border:1px dashed #d8ded6;border-radius:6px}.loading-dots{color:#7da171;letter-spacing:3px;animation:blink 1s infinite}@keyframes blink{50%{opacity:.25}}.empty-state strong{display:block;font:600 16px 'Manrope';color:#2b3b30;margin-bottom:8px}.empty-state button{margin-top:14px}.directory-footnote{font-size:10px;color:#849087;margin-top:20px}.info-icon{display:inline-grid;place-items:center;width:14px;height:14px;border:1px solid #aeb8ad;border-radius:50%;font:9px 'DM Mono';margin-right:6px}.how-section{background:#eaeee6;padding:76px max(calc((100vw - 1148px)/2),6.5%) 82px}.how-heading{text-align:center}.how-heading h2{font-size:29px;margin-bottom:8px}.how-heading>p{font-size:11px}.steps-grid{max-width:1148px;margin:35px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step-card{background:#f8f9f5;border:1px solid #e1e6dd;border-radius:5px;padding:21px 21px 22px;min-height:254px}.step-number{font:10px 'DM Mono';color:#53745c}.step-number span{font-size:8px;letter-spacing:.8px;color:#99a39a;margin-left:3px}.step-art{height:92px;margin:17px 0 15px;position:relative;display:flex;align-items:center;justify-content:center}.art-file{width:110px;height:75px;margin-left:10px;background:#fff;border:1px solid #dfe5dc;border-radius:4px;box-shadow:0 7px 17px #1d2d1d0e;align-items:flex-start;padding:15px 13px 8px;display:block}.art-file i{display:block;font:8px 'DM Mono';color:#6e9274}.art-file b{display:block;font:9px 'DM Sans';margin-top:4px}.file-fold{position:absolute;right:0;top:0;border-left:14px solid transparent;border-bottom:14px solid transparent;border-top:14px solid #e8eee5;border-right:14px solid #e8eee5}.file-lines i{height:2px;background:#e7ece5;width:74%;margin-top:4px}.file-lines i:nth-child(2){width:50%}.file-lines i:nth-child(3){width:62%}.art-ping{gap:0}.ping-circle{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#e6f4dc;color:#5b935c;font-size:20px;z-index:1}.ping-line{width:75px;border-top:1px dashed #aac69d}.ping-pill{font:9px 'DM Mono';background:#fff;border:1px solid #dfe5dc;border-radius:3px;padding:8px;color:#648362}.art-chat{flex-direction:column;align-items:center;gap:7px}.chat-bubble{font-size:9px;border-radius:9px;padding:8px 11px}.bubble-user{background:#e5eddf;align-self:center;margin-left:30px}.bubble-ai{background:#fff;border:1px solid #e7ebe4;align-self:center;margin-right:25px}.bubble-ai i{font-style:normal;color:#659155;margin-left:5px}.step-card h3{font:600 14px 'Manrope';margin:0 0 7px}.step-card p{font-size:10px;color:#768078;line-height:1.65;margin:0;max-width:290px}.step-card code{font:9px 'DM Mono';color:#4e7554}.add-section{max-width:1148px;margin:0 auto;padding:87px 0 76px;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:60px}.add-copy h2{font-size:40px;line-height:1.09;margin:14px 0}.add-copy h2 em{color:#6e9675}.add-copy p{font-size:12px;line-height:1.75;color:#758078;max-width:370px;margin-bottom:22px}.button-dark{background:var(--deep);color:#f5f7f2}.button-dark:hover{background:#2a3b31}.config-card{background:#1c2823;color:#e6eee4;border-radius:6px;box-shadow:0 16px 38px rgba(30,48,36,.13);overflow:hidden}.config-head{height:48px;padding:0 17px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #35443a;font:10px 'DM Mono';color:#bfcbc0}.config-head>span{display:flex;align-items:center;gap:8px}.file-status{width:6px;height:6px;background:#b5e864}.copy-button{background:#2c3931;border:1px solid #3c4b40;color:#ccd6ca;border-radius:3px;padding:6px 8px;font:9px 'DM Sans';cursor:pointer}.copy-button:hover{background:#394a3d}.copy-button span{margin-left:5px}.config-card pre{margin:0;padding:19px 22px 16px;overflow:auto;font:11px/1.82 'DM Mono',monospace}.yaml-key{color:#c9d5c6}.yaml-dash{color:#c3ea78}.yaml-value{color:#b7df8b}.yaml-bool{color:#e5c67d}.yaml-array{color:#a9c8b2}.config-foot{border-top:1px solid #35443a;padding:13px 18px;color:#96a59a;font-size:9px}.config-foot span{color:var(--lime);margin-right:5px}.trust-strip{max-width:1148px;margin:0 auto 69px;background:#e9ede6;border:1px solid #e0e4dc;border-radius:5px;padding:20px 23px;display:flex;align-items:center;gap:15px}.trust-symbol{width:34px;height:34px;background:#dbe7d7;border-radius:50%;display:grid;place-items:center;color:#54805e;font-size:21px}.trust-strip b{font:600 12px 'Manrope'}.trust-strip p{font-size:10px;color:#768078;margin:4px 0 0}.trust-strip>a{margin-left:auto;font-size:10px;color:#526e56;font-weight:600;white-space:nowrap}.trust-strip>a span{margin-left:6px}.footer{min-height:77px;border-top:1px solid var(--line);padding:0 max(calc((100vw - 1148px)/2),6.5%);display:flex;justify-content:space-between;align-items:center;color:#828c84;font:8px 'DM Mono';letter-spacing:.7px}.footer-brand{font:800 13px 'Manrope';letter-spacing:-.6px;color:var(--ink)}.footer-brand .brand-mark{width:26px;height:26px;border-radius:7px}.footer-brand .brand-mark svg{width:21px}.footer>b{color:#6f916b}.footer>span:last-child b{color:#6f916b;margin-left:5px}.toast{position:fixed;z-index:15;bottom:22px;left:50%;transform:translate(-50%,15px);opacity:0;pointer-events:none;background:#1d2b23;color:#f6f8f3;border:1px solid #415445;border-radius:5px;padding:11px 16px;font-size:11px;box-shadow:0 8px 28px #18251d29;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.modal-backdrop{position:fixed;inset:0;background:rgba(13,21,17,.55);z-index:10;display:flex;justify-content:flex-end;opacity:0;visibility:hidden;transition:.22s}.modal-backdrop.open{opacity:1;visibility:visible}.playground{width:min(480px,100%);height:100%;background:#f7f8f4;display:flex;flex-direction:column;padding:25px 25px 17px;transform:translateX(22px);transition:transform .22s;box-shadow:-12px 0 50px #10191326}.modal-backdrop.open .playground{transform:translateX(0)}.playground-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:20px;border-bottom:1px solid #e1e6df}.playground-head h2{font:700 24px 'Manrope';letter-spacing:-1px;margin:7px 0 0}.close-modal{font-size:26px;background:transparent;border:0;color:#667369;cursor:pointer}.playground-server{display:flex;align-items:center;gap:10px;padding:16px 0;border-bottom:1px solid #e4e8e2}.play-icon{width:34px;height:34px;border-radius:7px;background:#e4eedc;display:grid;place-items:center;color:#668a5e}.playground-server strong,.playground-server span{display:block}.playground-server strong{font:600 11px 'Manrope'}.playground-server span{font-size:9px;color:#7d887f;margin-top:4px}.small-outline{margin-left:auto;background:#fff;border:1px solid #dfe5dd;border-radius:3px;padding:7px 9px;font:9px 'DM Sans';color:#536457;cursor:pointer}.model-label{font:9px 'DM Mono';color:#758177;letter-spacing:.8px;margin:17px 0 7px}.playground select{height:38px;border:1px solid #dfe5dd;border-radius:4px;background:white;padding:0 10px;font:11px 'DM Sans';color:#455349;outline:none}.chat-area{flex:1;overflow:auto;margin:17px 0;display:flex;flex-direction:column;gap:13px}.welcome-chat{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#7d887e;gap:8px;font-size:10px}.welcome-spark{font-size:27px;color:#71946a;margin-bottom:4px}.welcome-chat b{font:600 14px 'Manrope';color:#48574b}.chat-message{max-width:88%;padding:11px 13px;border-radius:7px;font-size:11px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}.chat-message.user{align-self:flex-end;background:#e3eddc;color:#273b2b;border-bottom-right-radius:2px}.chat-message.assistant{align-self:flex-start;background:#fff;border:1px solid #e4e8e1;color:#35443a;border-bottom-left-radius:2px}.chat-message.error{color:#a15245}.chat-form{display:flex;align-items:flex-end;gap:8px;border:1px solid #dce3db;background:#fff;border-radius:5px;padding:6px}.chat-form textarea{flex:1;resize:none;border:0;outline:0;background:transparent;font:11px/1.5 'DM Sans';padding:7px 5px;max-height:120px;color:#243329}.chat-form button{width:31px;height:31px;border:0;border-radius:4px;background:#1c2a22;color:#f4f7f2;font-size:19px;cursor:pointer}.chat-form button:disabled{opacity:.4;cursor:not-allowed}.playground-note{font-size:9px;color:#8a948b;padding-top:11px}.playground-note span{color:#6e9274;margin-right:4px}.nav-open .main-nav{display:flex}
+:root{--paper:#f5f5ef;--ink:#1b2623;--muted:#737d78;--line:#e0e3dc;--lime:#d4fa56;--deep:#17221f;--green:#59826d;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.topbar{height:78px;padding:0 max(calc((100vw - 1240px)/2),6.25%);display:flex;align-items:center;justify-content:space-between;background:var(--paper);border-bottom:1px solid rgba(28,42,36,.07);position:relative;z-index:5}.brand{display:flex;align-items:center;gap:10px;font:800 17px 'Manrope',sans-serif;letter-spacing:-.8px}.brand-light{font-weight:500;color:#829088}.brand-mark{width:32px;height:32px;border-radius:9px;background:var(--deep);display:grid;place-items:center}.brand-mark svg{width:25px;fill:none;stroke:var(--lime);stroke-width:1.4;stroke-linejoin:round}.main-nav{display:flex;gap:34px;font-size:13px;color:#58635d}.main-nav a:hover,.text-link:hover{color:#385b47}.nav-cta{font-size:12px;font-weight:700;border:1px solid #cdd4cb;padding:11px 15px;border-radius:5px}.nav-cta span{margin-left:9px}.mobile-menu{display:none;background:none;border:0}.hero{min-height:538px;background:var(--deep);color:#f8fbf3;position:relative;overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;padding:73px max(calc((100vw - 1148px)/2),8.3%) 74px}.hero-grid{position:absolute;inset:0 0 0 48%;opacity:.11;background-image:linear-gradient(rgba(195,223,201,.24) 1px,transparent 1px),linear-gradient(90deg,rgba(195,223,201,.24) 1px,transparent 1px);background-size:50px 50px;mask-image:linear-gradient(90deg,transparent,#000 38%)}.hero-copy{position:relative;z-index:1;max-width:530px}.eyebrow,.section-kicker{font:500 10px 'DM Mono',monospace;letter-spacing:1.2px;color:#829a8b}.eyebrow{color:#b1c3b4;display:flex;align-items:center;gap:9px}.eyebrow-dot,.live-dot,.file-status{height:7px;width:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 3px rgba(212,250,86,.13)}h1,h2,h3,p{margin-top:0}h1{font:700 clamp(45px,5.5vw,69px)/1.04 'Manrope',sans-serif;letter-spacing:-3.8px;margin:25px 0 17px}h1 em,.add-copy h2 em{font-style:normal;color:var(--lime)}.hero-intro{color:#bdc7be;line-height:1.7;font-size:15px;max-width:428px;margin-bottom:25px}.hero-actions{display:flex;align-items:center;gap:23px}.button{display:inline-flex;align-items:center;justify-content:center;gap:22px;padding:14px 18px;border-radius:4px;font-size:12px;font-weight:700;transition:transform .18s,background .18s}.button:hover{transform:translateY(-2px)}.button-lime{background:var(--lime);color:#17221f}.button-lime:hover{background:#e0ff7c}.text-link{font-size:12px;font-weight:600;color:#d4ddd4}.text-link span{margin-left:7px}.hero-note{font-size:10px;color:#93a398;margin-top:27px}.mini-lock{font-size:16px;margin-right:7px;color:var(--lime);vertical-align:-1px}.hero-visual{position:relative;z-index:1;min-height:360px;display:flex;justify-content:center;align-items:center}.orbit{position:absolute;border:1px solid rgba(213,250,86,.14);border-radius:50%;transform:rotate(-28deg)}.orbit-one{width:380px;height:210px}.orbit-two{width:330px;height:160px;transform:rotate(36deg);border-color:rgba(140,185,151,.2)}.central-orb{width:122px;height:122px;border-radius:50%;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 36% 27%,#41594c,#26382e 70%);box-shadow:0 0 70px rgba(177,238,85,.17),inset 0 0 22px rgba(214,250,86,.1)}.orb-core{height:57px;width:57px;border:1px solid rgba(212,250,86,.74);border-radius:50%;color:var(--lime);font:800 32px 'Manrope';display:grid;place-items:center;text-shadow:0 0 20px #d4fa56}.orb-ring{position:absolute;inset:-12px;border:1px solid rgba(212,250,86,.27);border-radius:50%}.ring-b{inset:-26px;border-color:rgba(212,250,86,.12)}.orb-spark{position:absolute;right:-17px;top:4px;color:var(--lime);font-size:21px}.node{position:absolute;border:1px solid rgba(222,238,221,.15);background:rgba(37,53,45,.95);border-radius:8px;padding:12px;display:flex;align-items:center;gap:10px;box-shadow:0 14px 30px #101a16}.node-top{top:28px;left:4%}.node-bottom{bottom:47px;right:0}.node-icon{height:31px;width:31px;background:#344940;border-radius:6px;display:grid;place-items:center;color:#d5e6d6;font-size:16px}.node-icon-lime{color:var(--lime)}.node b,.node small{display:block}.node b{font-size:10px;font-weight:600}.node small{font-size:9px;color:#98aa9e;margin-top:4px}.arrow-small{color:var(--lime);font-size:13px;margin-left:10px}.visual-label{position:absolute;font:9px 'DM Mono';letter-spacing:1px;color:#809188}.label-a{right:4%;top:29%}.label-b{left:7%;bottom:19%}.hero-stats{display:flex;gap:19px;position:absolute;bottom:-48px;right:8%;align-items:center}.hero-stats strong,.hero-stats span{display:block}.hero-stats strong{font:600 17px 'Manrope';color:#eff7e8}.hero-stats span{font-size:9px;color:#95a49a;margin-top:2px}.stat-separator{height:29px;border-left:1px solid #415148}.hero-bottomline{position:absolute;bottom:0;left:8.3%;right:8.3%;height:37px;border-top:1px solid rgba(219,236,219,.12);display:flex;align-items:center;justify-content:space-between;font:8px 'DM Mono';letter-spacing:1px;color:#84958a}.hero-bottomline b{font-size:12px;color:var(--lime);margin-left:6px}.quick-strip{max-width:1148px;margin:0 auto;padding:29px 0;display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}.quick-item{display:flex;align-items:center;gap:12px;padding:0 22px;border-right:1px solid var(--line)}.quick-item:first-child{padding-left:0}.quick-item:nth-child(3){border:0}.quick-icon{width:34px;height:34px;border-radius:50%;background:#e8ece4;display:grid;place-items:center;color:#3c654e;font-size:18px}.quick-item b,.quick-item small{display:block}.quick-item b{font-size:11px}.quick-item small{font-size:9px;color:#78817b;margin-top:4px}.quick-free{display:block;border:0;padding-left:23px}.quick-free span{font:10px 'DM Mono';letter-spacing:.7px;color:#446c51}.quick-free small{margin-top:5px}.directory-section{max-width:1148px;margin:0 auto;padding:86px 0 80px}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:25px}.section-kicker{color:#66856e}.section-heading h2,.how-heading h2,.add-copy h2{font:700 34px/1.2 'Manrope',sans-serif;letter-spacing:-1.7px;margin:13px 0 8px}.heading-period{color:#679079}.section-heading p,.how-heading>p{font-size:12px;color:#78817b;margin:0}.directory-controls{display:flex;gap:8px;align-items:center}.searchbox{width:270px;height:40px;display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #dce1d9;border-radius:4px;padding:0 10px;color:#87928a}.searchbox>span{font-size:20px}.searchbox input{border:0;outline:0;background:transparent;width:100%;font:11px 'DM Sans';color:var(--ink)}.searchbox kbd{font:9px 'DM Mono';color:#8b958e;border:1px solid #e0e4de;border-radius:3px;padding:3px 5px;white-space:nowrap}.filter-button{height:40px;background:#fff;border:1px solid #dce1d9;border-radius:4px;padding:0 12px;font:11px 'DM Sans';color:#55615a;cursor:pointer}.filter-check{display:inline-grid;place-items:center;margin-left:9px;width:15px;height:15px;border-radius:3px;background:#d8f87e;color:#324b34;font-size:10px}.filter-button.is-off .filter-check{background:#edf0eb;color:#9aa29c}.directory-meta{display:flex;justify-content:space-between;margin-top:37px;padding:12px 2px;border-bottom:1px solid #dce0da;color:#68746b;font-size:10px}.directory-meta>div:first-child{display:flex;align-items:center;gap:8px}.directory-dot{background:#73ad73;box-shadow:none;width:6px;height:6px}.sort-label{font:9px 'DM Mono';color:#8d9690;letter-spacing:.7px}.sort-label b{font-weight:400;color:#53625a;margin-left:5px}.server-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;padding-top:17px}.server-card{background:#fff;border:1px solid #e3e6df;border-radius:6px;padding:18px;min-height:220px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s,box-shadow .2s}.server-card:hover{border-color:#bdcbb9;transform:translateY(-2px);box-shadow:0 10px 28px rgba(43,59,47,.06)}.card-top{display:flex;justify-content:space-between;align-items:center}.region-label{display:flex;align-items:center;gap:6px;color:#77837b;font:9px 'DM Mono';letter-spacing:.4px}.region-icon{font-size:12px;color:#698773}.badges{display:flex;gap:5px}.badge{font:8px 'DM Mono';letter-spacing:.3px;padding:5px 7px;border-radius:3px;background:#eff3eb;color:#68806c}.badge.free{background:#e9f5e4;color:#4c7a54}.badge.example{background:#fff3dd;color:#9c7335}.card-title{display:flex;align-items:center;gap:8px;margin-top:17px}.card-title h3{font:600 15px 'Manrope';letter-spacing:-.4px;margin:0}.card-desc{font-size:10px;color:#78817b;line-height:1.6;margin:8px 0 12px;min-height:31px}.endpoint-line{display:flex;align-items:center;gap:6px;margin:-3px 0 9px;color:#849087;min-width:0}.endpoint-line span{color:#76957b;font-size:10px}.endpoint-line code{font:9px 'DM Mono';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}.endpoint-copy{border:0;background:transparent;color:#66856e;font:8px 'DM Mono';cursor:pointer;padding:3px 0 3px 6px}.endpoint-copy:hover{color:#263e2e;text-decoration:underline}.tag-list{display:flex;gap:5px;flex-wrap:wrap}.tag{font:8px 'DM Mono';color:#67786d;background:#f3f5f0;border-radius:3px;padding:5px 6px}.card-bottom{margin-top:auto;padding-top:16px;border-top:1px solid #eff1ed;display:flex;align-items:center;justify-content:space-between}.model-summary{font:9px 'DM Mono';color:#7a867d}.model-summary strong{color:#3a5842;font-weight:500}.card-actions{display:flex;gap:6px}.card-button{border:1px solid #e0e5df;background:#fff;border-radius:3px;padding:7px 9px;font:9px 'DM Sans';font-weight:600;color:#48574c;cursor:pointer}.card-button:hover{background:#f5f8f1;border-color:#c3d0c1}.card-button.primary{background:var(--deep);color:#eff5ea;border-color:var(--deep)}.card-button.primary:hover{background:#2d4236}.card-button:disabled{opacity:.55;cursor:wait}.loading-card,.empty-state{grid-column:1/-1;padding:50px;text-align:center;color:#7d877f;font-size:12px;background:#fff;border:1px dashed #d8ded6;border-radius:6px}.loading-dots{color:#7da171;letter-spacing:3px;animation:blink 1s infinite}@keyframes blink{50%{opacity:.25}}.empty-state strong{display:block;font:600 16px 'Manrope';color:#2b3b30;margin-bottom:8px}.empty-state button{margin-top:14px}.directory-footnote{font-size:10px;color:#849087;margin-top:20px}.info-icon{display:inline-grid;place-items:center;width:14px;height:14px;border:1px solid #aeb8ad;border-radius:50%;font:9px 'DM Mono';margin-right:6px}.how-section{background:#eaeee6;padding:76px max(calc((100vw - 1148px)/2),6.5%) 82px}.how-heading{text-align:center}.how-heading h2{font-size:29px;margin-bottom:8px}.how-heading>p{font-size:11px}.steps-grid{max-width:1148px;margin:35px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step-card{background:#f8f9f5;border:1px solid #e1e6dd;border-radius:5px;padding:21px 21px 22px;min-height:254px}.step-number{font:10px 'DM Mono';color:#53745c}.step-number span{font-size:8px;letter-spacing:.8px;color:#99a39a;margin-left:3px}.step-art{height:92px;margin:17px 0 15px;position:relative;display:flex;align-items:center;justify-content:center}.art-file{width:110px;height:75px;margin-left:10px;background:#fff;border:1px solid #dfe5dc;border-radius:4px;box-shadow:0 7px 17px #1d2d1d0e;align-items:flex-start;padding:15px 13px 8px;display:block}.art-file i{display:block;font:8px 'DM Mono';color:#6e9274}.art-file b{display:block;font:9px 'DM Sans';margin-top:4px}.file-fold{position:absolute;right:0;top:0;border-left:14px solid transparent;border-bottom:14px solid transparent;border-top:14px solid #e8eee5;border-right:14px solid #e8eee5}.file-lines i{height:2px;background:#e7ece5;width:74%;margin-top:4px}.file-lines i:nth-child(2){width:50%}.file-lines i:nth-child(3){width:62%}.art-ping{gap:0}.ping-circle{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#e6f4dc;color:#5b935c;font-size:20px;z-index:1}.ping-line{width:75px;border-top:1px dashed #aac69d}.ping-pill{font:9px 'DM Mono';background:#fff;border:1px solid #dfe5dc;border-radius:3px;padding:8px;color:#648362}.step-card h3{font:600 14px 'Manrope';margin:0 0 7px}.step-card p{font-size:10px;color:#768078;line-height:1.65;margin:0;max-width:290px}.step-card code{font:9px 'DM Mono';color:#4e7554}.add-section{max-width:1148px;margin:0 auto;padding:87px 0 76px;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:60px}.add-copy h2{font-size:40px;line-height:1.09;margin:14px 0}.add-copy h2 em{color:#6e9675}.add-copy p{font-size:12px;line-height:1.75;color:#758078;max-width:370px;margin-bottom:22px}.button-dark{background:var(--deep);color:#f5f7f2}.button-dark:hover{background:#2a3b31}.config-card{background:#1c2823;color:#e6eee4;border-radius:6px;box-shadow:0 16px 38px rgba(30,48,36,.13);overflow:hidden}.config-head{height:48px;padding:0 17px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #35443a;font:10px 'DM Mono';color:#bfcbc0}.config-head>span{display:flex;align-items:center;gap:8px}.file-status{width:6px;height:6px;background:#b5e864}.copy-button{background:#2c3931;border:1px solid #3c4b40;color:#ccd6ca;border-radius:3px;padding:6px 8px;font:9px 'DM Sans';cursor:pointer}.copy-button:hover{background:#394a3d}.copy-button span{margin-left:5px}.config-card pre{margin:0;padding:19px 22px 16px;overflow:auto;font:11px/1.82 'DM Mono',monospace}.yaml-key{color:#c9d5c6}.yaml-dash{color:#c3ea78}.yaml-value{color:#b7df8b}.yaml-bool{color:#e5c67d}.yaml-array{color:#a9c8b2}.config-foot{border-top:1px solid #35443a;padding:13px 18px;color:#96a59a;font-size:9px}.config-foot span{color:var(--lime);margin-right:5px}.trust-strip{max-width:1148px;margin:0 auto 69px;background:#e9ede6;border:1px solid #e0e4dc;border-radius:5px;padding:20px 23px;display:flex;align-items:center;gap:15px}.trust-symbol{width:34px;height:34px;background:#dbe7d7;border-radius:50%;display:grid;place-items:center;color:#54805e;font-size:21px}.trust-strip b{font:600 12px 'Manrope'}.trust-strip p{font-size:10px;color:#768078;margin:4px 0 0}.trust-strip>a{margin-left:auto;font-size:10px;color:#526e56;font-weight:600;white-space:nowrap}.trust-strip>a span{margin-left:6px}.footer{min-height:77px;border-top:1px solid var(--line);padding:0 max(calc((100vw - 1148px)/2),6.5%);display:flex;justify-content:space-between;align-items:center;color:#828c84;font:8px 'DM Mono';letter-spacing:.7px}.footer-brand{font:800 13px 'Manrope';letter-spacing:-.6px;color:var(--ink)}.footer-brand .brand-mark{width:26px;height:26px;border-radius:7px}.footer-brand .brand-mark svg{width:21px}.footer>b{color:#6f916b}.footer>span:last-child b{color:#6f916b;margin-left:5px}.toast{position:fixed;z-index:15;bottom:22px;left:50%;transform:translate(-50%,15px);opacity:0;pointer-events:none;background:#1d2b23;color:#f6f8f3;border:1px solid #415445;border-radius:5px;padding:11px 16px;font-size:11px;box-shadow:0 8px 28px #18251d29;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.nav-open .main-nav{display:flex}
+.model-search-results{margin:14px 0 3px;padding:14px 16px;background:#e9eee7;border:1px solid #dfe5dc;border-radius:5px}.model-results-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}.model-results-heading strong{font:10px 'DM Mono';color:#728077}.model-results-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.model-result-row{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #e2e7df;border-radius:4px;padding:9px 10px;min-width:0}.model-result-name{min-width:0}.model-result-name strong,.model-result-name small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.model-result-name strong{font:10px 'DM Mono';color:#35483a}.model-result-name small{font-size:9px;color:#849087;margin-top:4px}.model-result-copy{flex:0 0 auto;border:0;background:transparent;color:#52775a;font:8px 'DM Mono';cursor:pointer}.model-result-copy:hover{text-decoration:underline}.model-no-results{font-size:10px;color:#778179;margin:0}.card-model-list{display:flex;flex-wrap:wrap;gap:5px;padding:12px 0 0;border-top:1px solid #eff1ed;margin-top:12px}.model-pill{font:8px 'DM Mono';color:#4d6853;background:#f0f4ec;border:1px solid #e6ebe2;border-radius:3px;padding:5px 7px;overflow-wrap:anywhere}.models-empty{font-size:10px;color:#859087}.list-models-button{white-space:nowrap}.art-model-list{height:92px;margin:17px 0 15px;display:flex;align-items:center;justify-content:center}.mini-models{width:190px;background:#fff;border:1px solid #e2e8df;border-radius:4px;padding:7px 10px;box-shadow:0 7px 17px #1d2d1d0e}.mini-models div{display:flex;align-items:center;justify-content:space-between;padding:4px 0;border-bottom:1px solid #f0f2ed}.mini-models div:last-child{border:0}.mini-models b{font:8px 'DM Mono';color:#556b59}.mini-models i{font:normal 9px 'DM Mono';color:#79a06d}
+@media(max-width:600px){.model-results-list{grid-template-columns:1fr}.model-search-results{padding:12px}.model-result-row{padding:8px}}
 @media(max-width:1200px){.quick-strip,.directory-section,.add-section,.trust-strip{margin-left:6.5%;margin-right:6.5%}.quick-strip{padding-left:0;padding-right:0}.hero{padding-left:8.3%;padding-right:8.3%}.hero-bottomline{left:8.3%;right:8.3%}.add-section{gap:35px}}
 @media(max-width:850px){.topbar{padding:0 5%;height:68px}.main-nav{gap:18px}.hero{grid-template-columns:1fr .8fr;padding-left:6%;padding-right:6%;min-height:500px}.hero-visual{transform:scale(.82)}.quick-strip{margin-left:5%;margin-right:5%;grid-template-columns:repeat(2,1fr);gap:17px 0}.quick-item:nth-child(2){border:0}.quick-item:nth-child(3){padding-left:0}.directory-section,.add-section,.trust-strip{margin-left:5%;margin-right:5%}.section-heading{align-items:flex-start;flex-direction:column}.directory-controls{width:100%}.searchbox{flex:1}.server-grid{grid-template-columns:repeat(2,1fr)}.steps-grid{grid-template-columns:repeat(3,1fr)}.step-card{padding:17px}.add-section{gap:25px}.footer{padding:0 5%}}
-@media(max-width:600px){.topbar{height:62px}.brand{font-size:15px}.brand-mark{width:29px;height:29px}.main-nav{display:none;position:absolute;top:62px;left:0;right:0;background:#f5f5ef;padding:18px 5%;flex-direction:column;border-bottom:1px solid var(--line);box-shadow:0 8px 15px #14201810}.nav-cta{display:none}.mobile-menu{display:flex;width:32px;height:30px;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}.mobile-menu span{width:19px;border-top:1.5px solid #29352e}.hero{display:block;padding:54px 7% 68px;min-height:0}.hero-copy{max-width:none}.hero h1{font-size:49px;letter-spacing:-2.7px}.hero-intro{font-size:13px}.hero-visual{min-height:265px;transform:scale(.86);margin:-6px -25px 0}.node-top{left:1%;top:12px}.node-bottom{right:0;bottom:15px}.hero-stats{bottom:-29px;right:4%}.hero-bottomline{left:7%;right:7%;font-size:7px}.hero-bottomline span:first-child{max-width:42%}.quick-strip{padding:22px 0;gap:16px 0}.quick-item{padding:0 8px;gap:8px}.quick-icon{width:28px;height:28px;flex-shrink:0}.quick-item b{font-size:10px}.quick-item small{font-size:8px;line-height:1.4}.quick-free{padding-left:8px}.directory-section{padding:62px 0}.section-heading h2{font-size:28px}.directory-controls{gap:5px}.searchbox{height:38px;padding:0 7px}.searchbox kbd{display:none}.filter-button{padding:0 8px;font-size:10px}.server-grid{grid-template-columns:1fr;gap:9px}.server-card{min-height:205px}.how-section{padding:58px 6%}.how-heading h2{font-size:25px}.steps-grid{grid-template-columns:1fr;gap:9px;margin-top:26px}.step-card{min-height:0;padding:17px 18px}.step-art{height:73px;margin:8px 0 10px}.step-card p{max-width:none}.add-section{padding:61px 0;grid-template-columns:1fr;gap:26px}.add-copy h2{font-size:36px}.config-card pre{font-size:10px;padding:16px}.trust-strip{margin-bottom:46px;align-items:flex-start;gap:10px;padding:15px}.trust-strip b{font-size:10px}.trust-strip p{font-size:9px;line-height:1.5}.trust-strip>a{display:none}.footer{min-height:90px;gap:9px;flex-wrap:wrap;justify-content:space-between;padding:15px 5%;font-size:7px}.footer>span:last-child{width:100%;text-align:right}.playground{padding:20px 17px 13px}.directory-footnote{line-height:1.6}.section-heading p{line-height:1.6}}
+@media(max-width:600px){.topbar{height:62px}.brand{font-size:15px}.brand-mark{width:29px;height:29px}.main-nav{display:none;position:absolute;top:62px;left:0;right:0;background:#f5f5ef;padding:18px 5%;flex-direction:column;border-bottom:1px solid var(--line);box-shadow:0 8px 15px #14201810}.nav-cta{display:none}.mobile-menu{display:flex;width:32px;height:30px;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}.mobile-menu span{width:19px;border-top:1.5px solid #29352e}.hero{display:block;padding:54px 7% 68px;min-height:0}.hero-copy{max-width:none}.hero h1{font-size:49px;letter-spacing:-2.7px}.hero-intro{font-size:13px}.hero-visual{min-height:265px;transform:scale(.86);margin:-6px -25px 0}.node-top{left:1%;top:12px}.node-bottom{right:0;bottom:15px}.hero-stats{bottom:-29px;right:4%}.hero-bottomline{left:7%;right:7%;font-size:7px}.hero-bottomline span:first-child{max-width:42%}.quick-strip{padding:22px 0;gap:16px 0}.quick-item{padding:0 8px;gap:8px}.quick-icon{width:28px;height:28px;flex-shrink:0}.quick-item b{font-size:10px}.quick-item small{font-size:8px;line-height:1.4}.quick-free{padding-left:8px}.directory-section{padding:62px 0}.section-heading h2{font-size:28px}.directory-controls{gap:5px}.searchbox{height:38px;padding:0 7px}.searchbox kbd{display:none}.filter-button{padding:0 8px;font-size:10px}.server-grid{grid-template-columns:1fr;gap:9px}.server-card{min-height:205px}.how-section{padding:58px 6%}.how-heading h2{font-size:25px}.steps-grid{grid-template-columns:1fr;gap:9px;margin-top:26px}.step-card{min-height:0;padding:17px 18px}.step-art{height:73px;margin:8px 0 10px}.step-card p{max-width:none}.add-section{padding:61px 0;grid-template-columns:1fr;gap:26px}.add-copy h2{font-size:36px}.config-card pre{font-size:10px;padding:16px}.trust-strip{margin-bottom:46px;align-items:flex-start;gap:10px;padding:15px}.trust-strip b{font-size:10px}.trust-strip p{font-size:9px;line-height:1.5}.trust-strip>a{display:none}.footer{min-height:90px;gap:9px;flex-wrap:wrap;justify-content:space-between;padding:15px 5%;font-size:7px}.footer>span:last-child{width:100%;text-align:right}.directory-footnote{line-height:1.6}.section-heading p{line-height:1.6}}
 
   </style>
 </head>
@@ -35,7 +37,7 @@
       <div class="hero-copy">
         <div class="eyebrow"><span class="eyebrow-dot"></span> FREE · OPEN · COMMUNITY-POWERED</div>
         <h1>Open models.<br><em>Open access.</em></h1>
-        <p class="hero-intro">A simple home for Ollama servers. Find an endpoint, browse its listed models, and chat with a model right here.</p>
+        <p class="hero-intro">A simple home for Ollama servers. Find endpoints, explore their model lists, and copy an API base URL.</p>
         <div class="hero-actions"><a class="button button-lime" href="#directory">Explore servers <span>↓</span></a><a class="text-link" href="#add">Add your server <span>↗</span></a></div>
         <div class="hero-note"><span class="mini-lock">⌑</span> No accounts. No paywalls. Just open models.</div>
       </div>
@@ -53,7 +55,7 @@
     <section class="quick-strip" aria-label="Directory benefits">
       <div class="quick-item"><span class="quick-icon">⌁</span><span><b>Find a server</b><small>One directory, many endpoints</small></span></div>
       <div class="quick-item"><span class="quick-icon">◉</span><span><b>Browse models</b><small>See names supplied in the directory</small></span></div>
-      <div class="quick-item"><span class="quick-icon">✳</span><span><b>Try it in-browser</b><small>Chat without switching tools</small></span></div>
+      <div class="quick-item"><span class="quick-icon">✳</span><span><b>List models</b><small>Expand every model on a server</small></span></div>
       <div class="quick-item quick-free"><span>FREE FOREVER</span><small>Community software, not a hosted GPU service</small></div>
     </section>
 
@@ -63,16 +65,17 @@
         <div class="directory-controls"><label class="searchbox"><span>⌕</span><input id="search-input" type="search" placeholder="Search servers or models" autocomplete="off"><kbd>⌘ K</kbd></label><button id="filter-toggle" class="filter-button" aria-label="Toggle free servers filter">☷ <span>Free only</span><span class="filter-check">✓</span></button></div>
       </div>
       <div class="directory-meta"><div><span class="directory-dot"></span><span id="results-count">Loading servers…</span></div><div class="sort-label">SORTED BY <b>FEATURED</b></div></div>
+      <section id="model-search-results" class="model-search-results" hidden aria-live="polite"></section>
       <div class="server-grid" id="server-grid" aria-live="polite"><div class="loading-card">Loading the server directory <span class="loading-dots">•••</span></div></div>
-      <div class="directory-footnote"><span class="info-icon">i</span> Chat prompts go directly from your browser to the selected server. For HTTP server URLs, use <a href="http://ollama.fourtexec.site">the HTTP version</a>. Servers must allow browser CORS.</div>
+      <div class="directory-footnote"><span class="info-icon">i</span> Model names and server details come from <code>servers.yaml</code>. The list page does not contact the Ollama servers.</div>
     </section>
 
     <section class="how-section" id="how">
-      <div class="how-heading"><div class="section-kicker">FROM ZERO TO PROMPT</div><h2>Three steps. No ceremony.</h2><p>Bring your own Ollama server, or point this directory at a community endpoint.</p></div>
+      <div class="how-heading"><div class="section-kicker">FROM URL TO MODEL LIST</div><h2>Three steps. No ceremony.</h2><p>Bring your own Ollama server, or point this directory at a community endpoint.</p></div>
       <div class="steps-grid">
         <article class="step-card"><div class="step-number">01 <span>— CONFIGURE</span></div><div class="step-art art-file"><span class="file-fold"></span><i>YAML</i><b>servers.yaml</b><span class="file-lines"><i></i><i></i><i></i></span></div><h3>Add an endpoint</h3><p>Put your server URL in a tiny <code>servers.yaml</code> file. No database or account required.</p></article>
-        <article class="step-card"><div class="step-number">02 <span>— CHOOSE</span></div><div class="step-art art-ping"><span class="ping-circle">✳</span><span class="ping-line"></span><span class="ping-pill">7 MODELS</span></div><h3>Pick a model</h3><p>Use the model names published in the directory, then open the chat playground.</p></article>
-        <article class="step-card"><div class="step-number">03 <span>— EXPLORE</span></div><div class="step-art art-chat"><div class="chat-bubble bubble-user">Explain embeddings simply</div><div class="chat-bubble bubble-ai">A map of meaning… <i>✳</i></div></div><h3>Start a conversation</h3><p>Choose an installed model and send a prompt from the built-in chat playground.</p></article>
+        <article class="step-card"><div class="step-number">02 <span>— CHOOSE</span></div><div class="step-art art-ping"><span class="ping-circle">✳</span><span class="ping-line"></span><span class="ping-pill">7 MODELS</span></div><h3>Pick a model</h3><p>Search for model names or expand a server card to see the full list.</p></article>
+        <article class="step-card"><div class="step-number">03 <span>— EXPLORE</span></div><div class="step-art art-model-list"><div class="mini-models"><div><b>llama3.2:latest</b><i>↗</i></div><div><b>qwen2.5:7b</b><i>↗</i></div><div><b>+ 5 more models</b><i>⋯</i></div></div></div><h3>See every model</h3><p>Expand a server card or search to reveal each model name listed in the directory.</p></article>
       </div>
     </section>
 
@@ -93,44 +96,31 @@
   <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 12.5 20 6l12 6.5v15L20 34 8 27.5z"/><path d="m8.5 12.7 11.5 6.5 11.5-6.5M20 19.5V33"/><circle cx="20" cy="19" r="3"/></svg></span><span>ollama<span class="brand-light">commons</span></span></a><span>FREE, OPEN, AND SELF-HOSTABLE.</span><span>Made for the open model community <b>✳</b></span></footer>
 
   <div class="toast" id="toast" role="status"></div>
-  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
-    <section class="playground" role="dialog" aria-modal="true" aria-labelledby="playground-title">
-      <header class="playground-head"><div><div class="section-kicker">OLLAMA PLAYGROUND</div><h2 id="playground-title">Try a model</h2></div><button class="close-modal" id="close-modal" aria-label="Close">×</button></header>
-      <div class="playground-server"><div class="play-icon">✳</div><div><strong id="play-server-name">Server</strong><span id="play-server-meta">Models from servers.yaml</span></div></div>
-      <label class="model-label" for="model-select">MODEL</label><select id="model-select" disabled><option>Choose a listed model</option></select>
-      <div class="chat-area" id="chat-area"><div class="welcome-chat"><div class="welcome-spark">✳</div><b>A blank canvas.</b><span>Pick an installed model and ask it anything.</span></div></div>
-      <form id="chat-form" class="chat-form"><textarea id="prompt-input" placeholder="Message this model…" rows="1" disabled></textarea><button type="submit" id="send-button" disabled aria-label="Send message">↑</button></form>
-      <div class="playground-note"><span>↗</span> Your prompt is sent directly to this server. Don’t share sensitive data.</div>
-    </section>
-  </div>
   <script>
 const grid = document.getElementById('server-grid');
 const searchInput = document.getElementById('search-input');
 const filterToggle = document.getElementById('filter-toggle');
 const resultsCount = document.getElementById('results-count');
+const modelSearchResults = document.getElementById('model-search-results');
 const toastEl = document.getElementById('toast');
-const modal = document.getElementById('modal-backdrop');
-const modelSelect = document.getElementById('model-select');
-const chatArea = document.getElementById('chat-area');
-const promptInput = document.getElementById('prompt-input');
-const sendButton = document.getElementById('send-button');
 let servers = [];
 let freeOnly = true;
-let activeServer = null;
-let history = [];
 let toastTimer;
 
-const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
 function parseServersYaml(text) {
   const result = [];
   let current = null;
   let activeArray = null;
   const parseValue = raw => {
     const value = raw.trim();
-    if (value.startsWith('[') && value.endsWith(']')) return value.slice(1, -1).split(',').map(item => item.trim().replace(/^(?:"([\s\S]*)"|'([\s\S]*)')$/, (_, doubleQuoted, singleQuoted) => doubleQuoted ?? singleQuoted)).filter(Boolean);
+    if (value.startsWith('[') && value.endsWith(']')) {
+      return value.slice(1, -1).split(',').map(item => item.trim().replace(/^(?:"([\s\S]*)"|'([\s\S]*)')$/, (_, dq, sq) => dq ?? sq)).filter(Boolean);
+    }
     if (value === 'true') return true;
     if (value === 'false') return false;
-    return value.replace(/^(?:"([\s\S]*)"|'([\s\S]*)')$/, (_, doubleQuoted, singleQuoted) => doubleQuoted ?? singleQuoted);
+    return value.replace(/^(?:"([\s\S]*)"|'([\s\S]*)')$/, (_, dq, sq) => dq ?? sq);
   };
   for (const raw of text.split(/\r?\n/)) {
     const line = raw.trim();
@@ -163,8 +153,24 @@ function parseServersYaml(text) {
     }
   }
   if (current) result.push(current);
-  if (result.some(server => !server.id || !server.name || !server.url)) throw new Error('Remote servers.yaml has an entry missing id, name, or url.');
-  return result.map(server => ({ ...server, tags: Array.isArray(server.tags) ? server.tags : [], free: server.free !== false, featured: server.featured === true, example: server.example === true }));
+  if (result.some(server => !server.id || !server.name || !server.url)) throw new Error('An entry in servers.yaml is missing id, name, or url.');
+  return result.map(server => ({
+    ...server,
+    tags: Array.isArray(server.tags) ? server.tags : [],
+    models: Array.isArray(server.models) ? server.models : [],
+    free: server.free !== false,
+    featured: server.featured === true,
+    example: server.example === true
+  }));
+}
+
+function getListedModels(server) {
+  return server.models.map(model => {
+    if (typeof model === 'string') return { name: model };
+    if (!model || typeof model !== 'object') return null;
+    const name = model.name || model.id || model.model;
+    return name ? { ...model, name: String(name) } : null;
+  }).filter(Boolean);
 }
 function openAIBaseUrl(url) {
   const base = String(url || '').replace(/\/+$/, '');
@@ -176,174 +182,94 @@ function showToast(message) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2800);
 }
-function getListedModels(server) {
-  if (!Array.isArray(server.models)) return [];
-  return server.models.map(model => {
-    if (typeof model === 'string') return { name: model };
-    if (!model || typeof model !== 'object') return null;
-    const name = model.name || model.id || model.model;
-    return name ? { ...model, name: String(name) } : null;
-  }).filter(Boolean);
+function renderModelSearch(query) {
+  if (!query) {
+    modelSearchResults.hidden = true;
+    modelSearchResults.innerHTML = '';
+    return;
+  }
+  const matches = servers.flatMap(server => getListedModels(server)
+    .filter(model => model.name.toLowerCase().includes(query))
+    .map(model => ({ server, model })));
+  modelSearchResults.hidden = false;
+  modelSearchResults.innerHTML = `
+    <div class="model-results-heading"><span class="section-kicker">MODEL MATCHES</span><strong>${matches.length} result${matches.length === 1 ? '' : 's'}</strong></div>
+    ${matches.length ? `<div class="model-results-list">${matches.map(({ server, model }) => `
+      <div class="model-result-row">
+        <div class="model-result-name"><strong>${esc(model.name)}</strong><small>${esc(server.name)} · ${esc(server.region || 'Unknown region')}</small></div>
+        <button class="model-result-copy" type="button" data-url="${esc(openAIBaseUrl(server.url))}">Copy /v1/ URL</button>
+      </div>`).join('')}</div>` : '<p class="model-no-results">No model names matched. Matching server cards, if any, are shown below.</p>'}`;
+  modelSearchResults.querySelectorAll('.model-result-copy').forEach(button => button.addEventListener('click', () => copyUrl(button.dataset.url)));
 }
 function render() {
   const query = searchInput.value.trim().toLowerCase();
-  const shown = servers.filter(s => {
-    const modelText = getListedModels(s).map(m => m.name).join(' ');
-    const searchable = `${s.name} ${s.description} ${s.region} ${(s.tags || []).join(' ')} ${modelText}`.toLowerCase();
-    return (!freeOnly || s.free) && (!query || searchable.includes(query));
-  }).sort((a,b) => Number(b.featured) - Number(a.featured));
-  resultsCount.textContent = `${shown.length} server${shown.length === 1 ? '' : 's'} configured`;
+  renderModelSearch(query);
+  const shown = servers.filter(server => {
+    const searchable = `${server.name} ${server.description || ''} ${server.region || ''} ${server.tags.join(' ')} ${getListedModels(server).map(m => m.name).join(' ')}`.toLowerCase();
+    return (!freeOnly || server.free) && (!query || searchable.includes(query));
+  }).sort((a, b) => Number(b.featured) - Number(a.featured));
+  resultsCount.textContent = `${shown.length} server${shown.length === 1 ? '' : 's'} shown · ${servers.length} total`;
   document.getElementById('hero-server-count').textContent = String(servers.length).padStart(2, '0');
   if (!shown.length) {
-    grid.innerHTML = `<div class="empty-state"><strong>No matching servers</strong>Try another search, or add a server to your <code>servers.yaml</code> file.<br><a class="card-button" href="#setup">See the YAML example</a></div>`;
+    grid.innerHTML = '<div class="empty-state"><strong>No matching servers</strong>Try another search, or review the YAML example below.</div>';
     return;
   }
-  grid.innerHTML = shown.map(s => {
-    const models = getListedModels(s);
-    const modelCount = models.length ? `${models.length} model${models.length === 1 ? '' : 's'} listed` : 'Models not listed';
-    const tags = (s.tags || []).slice(0, 3).map(t => `<span class="tag">${esc(t)}</span>`).join('');
+  grid.innerHTML = shown.map(server => {
+    const models = getListedModels(server);
+    const tags = server.tags.slice(0, 3).map(tag => `<span class="tag">${esc(tag)}</span>`).join('');
+    const modelItems = models.length
+      ? models.map(model => `<span class="model-pill">${esc(model.name)}</span>`).join('')
+      : '<span class="models-empty">No model names are listed in the YAML.</span>';
     return `<article class="server-card">
-      <div class="card-top"><span class="region-label"><span class="region-icon">⌖</span>${esc(s.region || 'Unknown region')}</span><span class="badges">${s.free ? '<i class="badge free">FREE</i>' : ''}${s.example ? '<i class="badge example">EXAMPLE</i>' : ''}</span></div>
-      <div class="card-title"><h3>${esc(s.name)}</h3></div>
-      <p class="card-desc">${esc(s.description || 'Ollama-compatible server endpoint.')}</p>
-      <div class="endpoint-line"><span>↗</span><code>${esc(openAIBaseUrl(s.url))}</code><button class="endpoint-copy" data-url="${esc(openAIBaseUrl(s.url))}" type="button">Copy</button></div>
+      <div class="card-top"><span class="region-label"><span class="region-icon">⌖</span>${esc(server.region || 'Unknown region')}</span><span class="badges">${server.free ? '<i class="badge free">FREE</i>' : ''}${server.example ? '<i class="badge example">EXAMPLE</i>' : ''}</span></div>
+      <div class="card-title"><h3>${esc(server.name)}</h3></div>
+      <p class="card-desc">${esc(server.description || 'Ollama-compatible server endpoint.')}</p>
+      <div class="endpoint-line"><span>↗</span><code>${esc(openAIBaseUrl(server.url))}</code><button class="endpoint-copy" data-url="${esc(openAIBaseUrl(server.url))}" type="button">Copy</button></div>
       <div class="tag-list">${tags}</div>
-      <div class="card-bottom"><span class="model-summary"><strong>${esc(modelCount)}</strong></span><div class="card-actions"><button class="card-button primary try-button" data-id="${esc(s.id)}">Try model <span>→</span></button></div></div>
+      <div class="card-bottom"><span class="model-summary"><strong>${models.length} model${models.length === 1 ? '' : 's'} listed</strong></span><button class="card-button list-models-button" type="button" aria-expanded="false">List models</button></div>
+      <div class="card-model-list" hidden>${modelItems}</div>
     </article>`;
   }).join('');
-  grid.querySelectorAll('.try-button').forEach(button => button.addEventListener('click', () => openPlayground(button.dataset.id)));
-  grid.querySelectorAll('.endpoint-copy').forEach(button => button.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(button.dataset.url); showToast('OpenAI-compatible /v1/ URL copied'); }
-    catch { showToast(`Copy this URL: ${button.dataset.url}`); }
+  grid.querySelectorAll('.list-models-button').forEach(button => button.addEventListener('click', () => {
+    const panel = button.closest('.server-card').querySelector('.card-model-list');
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    panel.hidden = expanded;
+    button.setAttribute('aria-expanded', String(!expanded));
+    button.textContent = expanded ? 'List models' : 'Hide models';
   }));
+  grid.querySelectorAll('.endpoint-copy').forEach(button => button.addEventListener('click', () => copyUrl(button.dataset.url)));
 }
-function serverApiUrl(server, route) {
-  let base = String(server.url || '').trim().replace(/\/+$/, '');
-  if (/\/v1$/i.test(base) && route.startsWith('/api/')) base = base.slice(0, -3);
-  if (/\/v1$/i.test(base) && route.startsWith('/v1/')) return `${base}${route.slice(3)}`;
-  return `${base}${route}`;
-}
-function browserAccessMessage(server, error) {
-  let httpEndpoint = false;
-  try { httpEndpoint = location.protocol === 'https:' && new URL(server.url).protocol === 'http:'; } catch {}
-  if (httpEndpoint) return 'Browser blocked this HTTP endpoint as mixed content. Chat requires this site and Ollama to use compatible protocols and CORS settings.';
-  if (error?.name === 'TypeError') return 'Browser could not read this endpoint. It must allow CORS requests from this site (and use HTTPS on an HTTPS page).';
-  return error?.message || 'Could not reach this Ollama endpoint.';
-}
-async function fetchServerJSON(server, route, options = {}) {
-  let response;
-  try {
-    response = await fetch(serverApiUrl(server, route), {
-      ...options,
-      headers: options.method ? { 'Content-Type': 'application/json', ...(options.headers || {}) } : (options.headers || {})
-    });
-  } catch (error) {
-    const friendly = new Error(browserAccessMessage(server, error));
-    friendly.status = error.status;
-    throw friendly;
-  }
-  const raw = await response.text();
-  let data = {};
-  try { data = raw ? JSON.parse(raw) : {}; } catch { data = { error: raw.slice(0, 300) }; }
-  if (!response.ok) {
-    const error = new Error(data.error || `Ollama returned HTTP ${response.status}`);
-    error.status = response.status;
-    throw error;
-  }
-  return data;
-}
-
-function openPlayground(id) {
-  activeServer = servers.find(s => s.id === id);
-  if (!activeServer) return;
-  history = [];
-  const models = getListedModels(activeServer);
-  document.getElementById('play-server-name').textContent = activeServer.name;
-  document.getElementById('play-server-meta').textContent = `${models.length} model${models.length === 1 ? '' : 's'} listed in servers.yaml`;
-  modelSelect.innerHTML = models.length
-    ? models.map(m => `<option value="${esc(m.name)}">${esc(m.name)}${m.size ? ` · ${formatSize(m.size)}` : ''}</option>`).join('')
-    : '<option value="">No model names are listed in servers.yaml</option>';
-  modelSelect.disabled = models.length === 0;
-  promptInput.disabled = models.length === 0;
-  sendButton.disabled = models.length === 0;
-  resetChat();
-  if (!models.length) addMessage('assistant', 'This server has no models listed in the YAML. Add a models: list to its entry before using the playground.');
-  modal.classList.add('open');
-  modal.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden';
-  if (models.length) promptInput.focus();
-}
-function formatSize(bytes) {
-  if (!bytes) return '';
-  if (bytes > 1024 ** 3) return `${(bytes / 1024 ** 3).toFixed(1)} GB`;
-  return `${Math.round(bytes / 1024 ** 2)} MB`;
-}
-function resetChat() {
-  chatArea.innerHTML = '<div class="welcome-chat"><div class="welcome-spark">✳</div><b>A blank canvas.</b><span>Pick an installed model and ask it anything.</span></div>';
-}
-function addMessage(role, text, error = false) {
-  chatArea.querySelector('.welcome-chat')?.remove();
-  const el = document.createElement('div');
-  el.className = `chat-message ${role}${error ? ' error' : ''}`;
-  el.textContent = text;
-  chatArea.appendChild(el);
-  chatArea.scrollTop = chatArea.scrollHeight;
-  return el;
-}
-async function sendChat(text) {
-  if (!activeServer || !modelSelect.value || !text.trim()) return;
-  const prompt = text.trim();
-  history.push({ role: 'user', content: prompt });
-  addMessage('user', prompt);
-  promptInput.value = '';
-  promptInput.style.height = 'auto';
-  sendButton.disabled = true;
-  promptInput.disabled = true;
-  const waiting = addMessage('assistant', 'Thinking…');
-  try {
-    let result;
-    try {
-      result = await fetchServerJSON(activeServer, '/v1/chat/completions', { method: 'POST', body: JSON.stringify({ model: modelSelect.value, messages: history, stream: false }) });
-    } catch (error) {
-      if (![404, 405].includes(error.status)) throw error;
-      result = await fetchServerJSON(activeServer, '/api/chat', { method: 'POST', body: JSON.stringify({ model: modelSelect.value, messages: history, stream: false }) });
-    }
-    const message = result.choices?.[0]?.message || result.message;
-    const answer = message?.content || '(The model returned an empty response.)';
-    history.push({ role: 'assistant', content: answer });
-    waiting.textContent = answer;
-  } catch (error) {
-    waiting.textContent = error.message;
-    waiting.classList.add('error');
-    history.pop();
-  } finally {
-    sendButton.disabled = false;
-    promptInput.disabled = false;
-    promptInput.focus();
-    chatArea.scrollTop = chatArea.scrollHeight;
-  }
+async function copyUrl(url) {
+  try { await navigator.clipboard.writeText(url); showToast('OpenAI-compatible /v1/ URL copied'); }
+  catch { showToast(`Copy this URL: ${url}`); }
 }
 
 searchInput.addEventListener('input', render);
-filterToggle.addEventListener('click', () => { freeOnly = !freeOnly; filterToggle.classList.toggle('is-off', !freeOnly); render(); });
-document.getElementById('close-modal').addEventListener('click', closeModal);
-modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-function closeModal() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); searchInput.focus(); } });
-document.getElementById('chat-form').addEventListener('submit', e => { e.preventDefault(); sendChat(promptInput.value); });
-promptInput.addEventListener('input', () => { promptInput.style.height = 'auto'; promptInput.style.height = `${Math.min(promptInput.scrollHeight, 120)}px`; });
-promptInput.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); document.getElementById('chat-form').requestSubmit(); } });
-document.getElementById('copy-config').addEventListener('click', async e => {
-  const yaml = `servers:\n  - id: my-ollama\n    name: My Ollama Server\n    url: https://ollama.example.com\n    region: US East\n    free: true\n    tags: [community, gpu]`;
-  try { await navigator.clipboard.writeText(yaml); e.currentTarget.innerHTML = 'Copied! <span>✓</span>'; setTimeout(() => e.currentTarget.innerHTML = 'Copy example <span>▢</span>', 1600); }
-  catch { showToast('Clipboard unavailable. Copy the example from servers.yaml instead.'); }
+filterToggle.addEventListener('click', () => {
+  freeOnly = !freeOnly;
+  filterToggle.classList.toggle('is-off', !freeOnly);
+  render();
+});
+document.addEventListener('keydown', event => {
+  if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+    event.preventDefault();
+    searchInput.focus();
+  }
+});
+document.getElementById('copy-config').addEventListener('click', async event => {
+  const yaml = `servers:\n  - id: my-ollama\n    name: My Ollama Server\n    url: https://ollama.example.com\n    region: US East\n    free: true\n    tags: [community, gpu]\n    models: [llama3.2:latest]`;
+  try {
+    await navigator.clipboard.writeText(yaml);
+    event.currentTarget.innerHTML = 'Copied! <span>✓</span>';
+    setTimeout(() => event.currentTarget.innerHTML = 'Copy example <span>▢</span>', 1600);
+  } catch { showToast('Clipboard unavailable. Copy the example from servers.yaml instead.'); }
 });
 
 fetch('https://ollama.fourtexec.site/servers.yaml', { cache: 'no-store' }).then(async response => {
   if (!response.ok) throw new Error(`Could not load remote servers.yaml (${response.status})`);
   return response.text();
 }).then(text => { servers = parseServersYaml(text); render(); }).catch(error => {
-  grid.innerHTML = `<div class="empty-state"><strong>Couldn’t load remote servers.yaml</strong>${esc(error.message)}<br>Verify the remote file and its CORS settings, then reload.</div>`;
+  grid.innerHTML = `<div class="empty-state"><strong>Couldn’t load remote servers.yaml</strong>${esc(error.message)}<br>Verify the remote YAML and reload.</div>`;
   resultsCount.textContent = 'Directory unavailable';
 });
 

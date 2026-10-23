@@ -1,6 +1,6 @@
 # Ollama Commons
 
-A free, self-hostable directory for Ollama-compatible endpoints. Browse configured servers, copy their OpenAI-compatible base URLs, and try listed models in an in-browser chat panel.
+A free, self-hostable directory for Ollama-compatible endpoints. Search listed models, expand server model lists, and copy OpenAI-compatible base URLs.
 
 > This project is directory software, not a hosted GPU service. The included `.example.com` URLs are placeholders, not real free servers. Only list endpoints you operate or have permission to include.
 
@@ -21,7 +21,7 @@ npm run build
 
 This creates a self-contained `index.html` for GitHub Pages and `ollama-commons.html` as a separate copy. `CNAME` is set to `ollama.fourtexec.site`; configure that custom domain in the repository's Pages settings and DNS. Publish the generated root `index.html`, `CNAME`, and `.nojekyll` on the Pages branch (`ghpages` for this repository).
 
-The directory fetches its YAML directly from `https://ollama.fourtexec.site/servers.yaml`. Chat prompts go directly from the visitor's browser to the selected server, so the endpoint must allow CORS from the site's origin. Use the HTTP site for HTTP endpoints; browsers block HTTP endpoints from HTTPS pages. The local `servers.yaml` is an example/template; the live directory source is the remote YAML URL above.
+The directory fetches its YAML directly from `https://ollama.fourtexec.site/servers.yaml`; it does not contact the listed Ollama endpoints. The local `servers.yaml` is an example/template; the live directory source is the remote YAML URL above.
 
 ## Configure an endpoint
 
@@ -38,15 +38,12 @@ servers:
     example: false
 ```
 
-Required fields: `id`, `name`, and `url`. Optional fields: `description`, `region`, `free`, `tags`, `models`, `featured`, and `example`. IDs should be unique. URLs must be HTTP or HTTPS. The in-browser chat menu uses the `models` list from YAML; add model names there for each server. The YAML reader supports block-list and inline arrays.
-
-For browser chat, the target server must allow CORS from the site origin and expose either `/v1/chat/completions` or Ollama's `/api/chat` endpoint.
+Required fields: `id`, `name`, and `url`. Optional fields: `description`, `region`, `free`, `tags`, `models`, `featured`, and `example`. IDs should be unique. URLs must be HTTP or HTTPS. The directory search and expandable model lists use the `models` list from YAML; add model names there for each server. The YAML reader supports block-list and inline arrays.
 
 ## Features
 
 - Search/filter configured servers, tags, and listed models
 - Copyable `/v1/` base URL for each server
-- In-browser chat using a model name listed in the remote YAML
 - No accounts, database, API key, or third-party npm dependency
 
 ## Hourly opt-in registry updater
@@ -79,4 +76,4 @@ servers:
 
 ## Security notes
 
-Only trust the maintainers of `https://ollama.fourtexec.site/servers.yaml`: its entries determine which endpoint receives a visitor's chat prompt. Prompts go directly from the browser to the selected server; that server's operator controls data handling. List only servers whose operators have agreed to be included.
+Only trust the maintainers of `https://ollama.fourtexec.site/servers.yaml`: its entries determine which server and model information is displayed. List only endpoints you operate or have permission to include.

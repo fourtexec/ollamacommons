@@ -21,4 +21,4 @@ fs.writeFileSync(outputPath, html);
 fs.writeFileSync(path.join(root, 'index.html'), html);
 console.log(`Built GitHub Pages entry point: index.html`);
 console.log(`Built standalone copy: ${path.basename(outputPath)}`);
-console.log('Built static directory and browser chat playground.');
+console.log('Built static server directory and model-search page.');
