@@ -122,6 +122,34 @@ let history = [];
 let toastTimer;
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function parseServersYaml(text) {
+  const result = [];
+  let current = null;
+  const parseValue = raw => {
+    const value = raw.trim();
+    if (value.startsWith('[') && value.endsWith(']')) return value.slice(1, -1).split(',').map(item => item.trim().replace(/^(?:"([\s\S]*)"|'([\s\S]*)')$/, (_, doubleQuoted, singleQuoted) => doubleQuoted ?? singleQuoted)).filter(Boolean);
+    if (value === 'true') return true;
+    if (value === 'false') return false;
+    return value.replace(/^(?:"([\s\S]*)"|'([\s\S]*)')$/, (_, doubleQuoted, singleQuoted) => doubleQuoted ?? singleQuoted);
+  };
+  for (const raw of text.split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#') || line === 'servers:') continue;
+    if (line.startsWith('- ')) {
+      if (current) result.push(current);
+      current = {};
+      const rest = line.slice(2).trim();
+      const colon = rest.indexOf(':');
+      if (colon > 0) current[rest.slice(0, colon).trim()] = parseValue(rest.slice(colon + 1));
+    } else if (current) {
+      const colon = line.indexOf(':');
+      if (colon > 0) current[line.slice(0, colon).trim()] = parseValue(line.slice(colon + 1));
+    }
+  }
+  if (current) result.push(current);
+  if (result.some(server => !server.id || !server.name || !server.url)) throw new Error('Remote servers.yaml has an entry missing id, name, or url.');
+  return result.map(server => ({ ...server, tags: Array.isArray(server.tags) ? server.tags : [], free: server.free !== false, featured: server.featured === true, example: server.example === true }));
+}
 function showToast(message) {
   toastEl.textContent = message;
   toastEl.classList.add('show');
@@ -286,8 +314,11 @@ document.getElementById('copy-config').addEventListener('click', async e => {
   catch { showToast('Clipboard unavailable. Copy the example from servers.yaml instead.'); }
 });
 
-getJSON('/api/servers').then(data => { servers = data.servers || []; render(); }).catch(error => {
-  grid.innerHTML = `<div class="empty-state"><strong>Couldn’t load servers.yaml</strong>${esc(error.message)}<br>Check the server logs and reload the page.</div>`;
+fetch('https://ollama.fourtexec.site/servers.yaml', { cache: 'no-store' }).then(async response => {
+  if (!response.ok) throw new Error(`Could not load remote servers.yaml (${response.status})`);
+  return response.text();
+}).then(text => { servers = parseServersYaml(text); render(); }).catch(error => {
+  grid.innerHTML = `<div class="empty-state"><strong>Couldn’t load remote servers.yaml</strong>${esc(error.message)}<br>Check the remote file and its CORS settings, then reload.</div>`;
   resultsCount.textContent = 'Directory unavailable';
 });
 
