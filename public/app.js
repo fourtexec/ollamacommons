@@ -98,7 +98,7 @@ function renderModelSearch(query) {
     ${matches.length ? `<div class="model-results-list">${matches.map(({ server, model }) => `
       <div class="model-result-row">
         <div class="model-result-name"><strong>${esc(model.name)}</strong><small>${esc(server.name)} · ${esc(server.region || 'Unknown region')}</small></div>
-        <button class="model-result-copy" type="button" data-url="${esc(openAIBaseUrl(server.url))}">Copy /v1/ URL</button>
+        <div class="model-result-actions"><a class="model-result-link" href="${esc(openAIBaseUrl(server.url))}" target="_blank" rel="noopener noreferrer">Open /v1/ ↗</a><button class="model-result-copy" type="button" data-url="${esc(openAIBaseUrl(server.url))}">Copy</button></div>
       </div>`).join('')}</div>` : '<p class="model-no-results">No model names matched. Matching server cards, if any, are shown below.</p>'}`;
   modelSearchResults.querySelectorAll('.model-result-copy').forEach(button => button.addEventListener('click', () => copyUrl(button.dataset.url)));
 }
