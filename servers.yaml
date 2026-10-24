@@ -457,3 +457,599 @@ servers:
   - beam:cloud
   - muse-spark-open:cloud
   - minimax-m3.1-flash:cloud
+- id: 62-210-137-232_11434
+  name: Discovered · 62.210.137.232_11434
+  url: http://62.210.137.232:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:17:07.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.2:latest
+  - nomic-embed-text:latest
+  - qwen2.5-coder:7b
+- id: 84-247-153-104_11434
+  name: Discovered · 84.247.153.104_11434
+  url: http://84.247.153.104:11434
+  description: Auto-discovered Ollama endpoint (6 models). Detected 2026-10-24 08:17:07.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - llama3.2:3b
+  - qwen2.5:7b
+  - mistral:7b
+  - deepseek-r1:8b
+  - nomic-embed-text:latest
+- id: 138-68-93-117_11434
+  name: Discovered · 138.68.93.117_11434
+  url: http://138.68.93.117:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:07.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5-coder:7b
+  - deepseek-r1:14b
+  - nomic-embed-text:latest
+- id: 167-71-192-233_11434
+  name: Discovered · 167.71.192.233_11434
+  url: http://167.71.192.233:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:08.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5-coder:7b
+  - deepseek-r1:14b
+  - nomic-embed-text:latest
+- id: 176-107-181-163_11434
+  name: Discovered · 176.107.181.163_11434
+  url: http://176.107.181.163:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:08.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - qwen2.5:72b
+  - deepseek-r1:14b
+  - gemma3:8.2b
+  - deepseek-r1:latest
+- id: 84-247-131-184_11434
+  name: Discovered · 84.247.131.184_11434
+  url: http://84.247.131.184:11434
+  description: Auto-discovered Ollama endpoint (6 models). Detected 2026-10-24 08:17:10.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - llama3.2:3b
+  - qwen2.5:7b
+  - mistral:7b
+  - deepseek-r1:8b
+  - nomic-embed-text:latest
+- id: 107-161-25-224_11434
+  name: Discovered · 107.161.25.224_11434
+  url: http://107.161.25.224:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:11.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - gemma3:8.2b
+  - qwen2.5:72b
+  - deepseek-r1:latest
+  - deepseek-r1:14b
+- id: 49-212-157-177_11434
+  name: Discovered · 49.212.157.177_11434
+  url: http://49.212.157.177:11434
+  description: Auto-discovered Ollama endpoint (2 models). Detected 2026-10-24 08:17:12.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - nomic-embed-text:latest
+- id: 66-240-205-176_11434
+  name: Discovered · 66.240.205.176_11434
+  url: http://66.240.205.176:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:14.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - deepseek-r1:latest
+  - gemma3:8.2b
+  - deepseek-r1:14b
+  - qwen2.5:72b
+- id: 206-189-115-192_11434
+  name: Discovered · 206.189.115.192_11434
+  url: http://206.189.115.192:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:17:24.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.2:latest
+  - nomic-embed-text:latest
+  - qwen2.5-coder:7b
+- id: 38-180-22-86_11434
+  name: Discovered · 38.180.22.86_11434
+  url: http://38.180.22.86:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:24.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - gemma3:8.2b
+  - deepseek-r1:latest
+  - qwen2.5:72b
+  - deepseek-r1:14b
+- id: 217-77-11-55_11434
+  name: Discovered · 217.77.11.55_11434
+  url: http://217.77.11.55:11434
+  description: Auto-discovered Ollama endpoint (6 models). Detected 2026-10-24 08:17:26.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - llama3.2:3b
+  - qwen2.5:7b
+  - mistral:7b
+  - deepseek-r1:8b
+  - nomic-embed-text:latest
+- id: 5-79-66-187_11434
+  name: Discovered · 5.79.66.187_11434
+  url: http://5.79.66.187:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:17:26.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.2:latest
+  - nomic-embed-text:latest
+  - qwen2.5-coder:7b
+- id: 164-68-96-28_11434
+  name: Discovered · 164.68.96.28_11434
+  url: http://164.68.96.28:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:17:30.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.2:latest
+  - nomic-embed-text:latest
+  - qwen2.5-coder:7b
+- id: 168-235-74-31_11434
+  name: Discovered · 168.235.74.31_11434
+  url: http://168.235.74.31:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:30.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - deepseek-r1:14b
+  - qwen2.5:72b
+  - gemma3:8.2b
+  - deepseek-r1:latest
+- id: 168-235-81-149_11434
+  name: Discovered · 168.235.81.149_11434
+  url: http://168.235.81.149:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:30.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - deepseek-r1:latest
+  - deepseek-r1:14b
+  - qwen2.5:72b
+  - gemma3:8.2b
+- id: 34-9-177-13_11434
+  name: Discovered · 34.9.177.13_11434
+  url: http://34.9.177.13:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:31.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5:7b
+  - mistral:7b
+  - nomic-embed-text
+- id: 38-180-44-128_11434
+  name: Discovered · 38.180.44.128_11434
+  url: http://38.180.44.128:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:35.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - gemma3:8.2b
+  - qwen2.5:72b
+  - deepseek-r1:14b
+  - deepseek-r1:latest
+- id: 133-4-188-41_11434
+  name: Discovered · 133.4.188.41_11434
+  url: http://133.4.188.41:11434
+  description: Auto-discovered Ollama endpoint (2 models). Detected 2026-10-24 08:17:36.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - nomic-embed-text:latest
+- id: 45-136-197-139_11434
+  name: Discovered · 45.136.197.139_11434
+  url: http://45.136.197.139:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:36.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - gemma3:8.2b
+  - deepseek-r1:latest
+  - deepseek-r1:14b
+  - qwen2.5:72b
+- id: 188-116-20-207_11434
+  name: Discovered · 188.116.20.207_11434
+  url: http://188.116.20.207:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:37.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - deepseek-r1:14b
+  - qwen2.5:72b
+  - gemma3:8.2b
+  - deepseek-r1:latest
+- id: 38-91-104-106_11434
+  name: Discovered · 38.91.104.106_11434
+  url: http://38.91.104.106:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:17:39.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5:7b
+  - codellama:13b
+- id: 136-71-22-221_11434
+  name: Discovered · 136.71.22.221_11434
+  url: http://136.71.22.221:11434
+  description: Auto-discovered Ollama endpoint (1 models). Detected 2026-10-24 08:17:39.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.2:3b
+- id: 104-131-83-204_11434
+  name: Discovered · 104.131.83.204_11434
+  url: http://104.131.83.204:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:40.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5-coder:7b
+  - deepseek-r1:14b
+  - nomic-embed-text:latest
+- id: 139-59-172-7_11434
+  name: Discovered · 139.59.172.7_11434
+  url: http://139.59.172.7:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:17:43.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.2:latest
+  - nomic-embed-text:latest
+  - qwen2.5-coder:7b
+- id: 213-165-253-89_11434
+  name: Discovered · 213.165.253.89_11434
+  url: http://213.165.253.89:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:43.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - qwen2.5:72b
+  - gemma3:8.2b
+  - deepseek-r1:latest
+  - deepseek-r1:14b
+- id: 47-79-225-132_11434
+  name: Discovered · 47.79.225.132_11434
+  url: http://47.79.225.132:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:17:44.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - qwen2.5:14b-instruct-q4_K_M
+  - llama3.3:70b-instruct
+  - deepseek-r1:32b
+- id: 51-161-131-235_11434
+  name: Discovered · 51.161.131.235_11434
+  url: http://51.161.131.235:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:45.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - gemma3:8.2b
+  - deepseek-r1:14b
+  - deepseek-r1:latest
+  - qwen2.5:72b
+- id: 157-245-87-227_11434
+  name: Discovered · 157.245.87.227_11434
+  url: http://157.245.87.227:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:45.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5-coder:7b
+  - deepseek-r1:14b
+  - nomic-embed-text:latest
+- id: 170-64-147-15_11434
+  name: Discovered · 170.64.147.15_11434
+  url: http://170.64.147.15:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:46.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5-coder:7b
+  - deepseek-r1:14b
+  - nomic-embed-text:latest
+- id: 45-79-15-248_11434
+  name: Discovered · 45.79.15.248_11434
+  url: http://45.79.15.248:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:17:46.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.2:latest
+  - nomic-embed-text:latest
+  - qwen2.5-coder:7b
+- id: 2-31-62-225_11434
+  name: Discovered · 2.31.62.225_11434
+  url: http://2.31.62.225:11434
+  description: Auto-discovered Ollama endpoint (2 models). Detected 2026-10-24 08:17:49.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:70b
+  - mistral:7b
+- id: 107-191-102-246_11434
+  name: Discovered · 107.191.102.246_11434
+  url: http://107.191.102.246:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:49.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - deepseek-r1:14b
+  - deepseek-r1:latest
+  - gemma3:8.2b
+  - qwen2.5:72b
+- id: 45-150-108-219_11434
+  name: Discovered · 45.150.108.219_11434
+  url: http://45.150.108.219:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:54.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - deepseek-r1:latest
+  - gemma3:8.2b
+  - deepseek-r1:14b
+  - qwen2.5:72b
+- id: 38-180-16-112_11434
+  name: Discovered · 38.180.16.112_11434
+  url: http://38.180.16.112:11434
+  description: Auto-discovered Ollama endpoint (4 models). Detected 2026-10-24 08:17:56.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - gemma3:8.2b
+  - deepseek-r1:14b
+  - deepseek-r1:latest
+  - qwen2.5:72b
+- id: 172-233-44-98_11434
+  name: Discovered · 172.233.44.98_11434
+  url: http://172.233.44.98:11434
+  description: Auto-discovered Ollama endpoint (553 models). Detected 2026-10-24 08:17:57.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5-coder:7b
+  - llama2:13b
+  - llama3:70b
+  - gemma4:26b-mlx
+  - qwen3.6:27b
+  - qwen3.6:35b-mlx
+  - llama3.2:1b
+  - ../../../../opt/ollama/data/credentials.txt
+  - ../../../../opt/ollama/data/.env_backup
+  - ../../../../opt/ollama/data/target_recon.json
+  - ../../../../opt/ollama/data/db_dump.sql
+  - ../../../../opt/ollama/data/run_exploit.sh
+  - ../../../../opt/ollama/data/exploits/ssrf_probe.sh
+  - leak__etc_passwd
+  - leak__etc_hostname
+  - ../../../etc/passwd
+  - f5leak__etc_shadow
+  - f5leak__root_.ssh_id_ed25519
+  - f5leak__root_.ssh_id_rsa
+- id: 5-75-252-79_11434
+  name: Discovered · 5.75.252.79_11434
+  url: http://5.75.252.79:11434
+  description: Auto-discovered Ollama endpoint (3 models). Detected 2026-10-24 08:18:02.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:8b
+  - qwen2.5:7b
+  - codellama:13b
