@@ -1053,3 +1053,37 @@ servers:
   - llama3.1:8b
   - qwen2.5:7b
   - codellama:13b
+- id: 160-236-153-15_11434
+  name: Discovered · 160.236.153.15_11434
+  url: http://160.236.153.15:11434
+  description: Auto-discovered Ollama endpoint (5 models). Detected 2026-10-24 09:44:09.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:latest
+  - mistral:latest
+  - codellama:13b
+  - phi3:latest
+  - nomic-embed-text:latest
+- id: 43-157-226-37_11434
+  name: Discovered · 43.157.226.37_11434
+  url: http://43.157.226.37:11434
+  description: Auto-discovered Ollama endpoint (5 models). Detected 2026-10-24 09:44:48.
+  region: Auto
+  free: true
+  tags:
+  - auto-discovered
+  - community
+  featured: false
+  example: false
+  models:
+  - llama3.1:latest
+  - mistral:latest
+  - codellama:13b
+  - phi3:latest
+  - nomic-embed-text:latest
